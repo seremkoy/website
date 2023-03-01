@@ -164,17 +164,17 @@ table {
     align-items: center;
     gap: 0.5rem;
 }
-.deneme{
+.ani-b{
     position: relative;
     overflow: hidden;
     padding: 3px;
 }
-.deneme span{
+.ani-b span{
     display: block;
     z-index: 3;
     position: relative;
 }
-.deneme:hover::before
+.contCard:hover > .ani-b::before
 {
     animation: deneme 1s linear infinite;
 }
@@ -186,7 +186,7 @@ table {
         background-position: 0px;
     }
 }
-.deneme::before{
+.ani-b::before{
     content: '';
     position: absolute;
     top: 0;
@@ -230,10 +230,12 @@ table {
 }
 .contCardH{
 flex: 1;
+color: #fff;
 }
 .contCardP{
 flex: 1;
 text-align: left;
+color: #fff;
 }
 
 /* FOOTER AREA START */
