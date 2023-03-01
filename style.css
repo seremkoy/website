@@ -168,9 +168,11 @@ table {
     position: relative;
     overflow: hidden;
     padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .ani-b span{
-    display: block;
     z-index: 3;
     position: relative;
 }
@@ -266,7 +268,6 @@ footer {
     align-items: center;
     flex-direction: column;
 }
-
 .footer-info {
     text-align: center;
     justify-content: space-evenly;
