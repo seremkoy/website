@@ -164,12 +164,69 @@ table {
     align-items: center;
     gap: 0.5rem;
 }
-
+.deneme{
+    position: relative;
+    overflow: hidden;
+    padding: 3px;
+}
+.deneme span{
+    display: block;
+    z-index: 3;
+    position: relative;
+}
+.deneme:hover::before
+{
+    animation: deneme 1s linear infinite;
+}
+@keyframes deneme{
+    0%{
+        background-position: -150px;
+    }
+    100%{
+        background-position: 0px;
+    }
+}
+.deneme::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(115deg,#05e13c,#cc5b10,#06a0bb, #479a04);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    border-radius: 50%;
+}
+/* .contCard:hover{
+    animation: border 5s ease infinite;
+} */
+@keyframes border {
+    0%{
+        border: 3px solid #7ef470;
+    }
+    20%{
+        border: 3px solid #ad610b;
+    }
+    40%{
+        border: 3px solid #ccd8cb;
+    }
+    60%{
+        border: 3px solid #22128b;
+    }
+    80%{
+        border: 3px solid #0f8502;
+    }
+    100%{
+        border: 1px solid #010501;
+    }
+}
 .icon {
     background-color: #292930;
     padding: 1.1vw;
     border-radius: 50%;
     flex: 1;
+    color: #7ef470;
+    z-index: 5;
 }
 .contCardH{
 flex: 1;
@@ -403,6 +460,7 @@ main {
     /* margin-top: 3%; */
     /* background: rgb(83, 251, 63); */
     background: radial-gradient(circle, rgba(83, 251, 63, 0.9172619731486344) 20%, rgba(255, 255, 255, 1) 45%);
+    margin: 0 auto;
 }
 
 .home-area-l,
