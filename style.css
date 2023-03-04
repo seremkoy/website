@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/rage-italic');
+
+@font-face {
+    font-family: 'Rage Italic';
+    src: url('./fonts/RageItalicRegular.ttf') format('embedded-opentype'),
+        /* Internet Explorer */
+        url('./fonts/RageItalicRegular.ttf') format('woff2'),
+        /* Super Modern Browsers */
+        url('./fonts/RageItalicRegular.ttf') format('woff'),
+        /* Pretty Modern Browsers */
+        url('./fonts/RageItalicRegular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('./fonts/RageItalicRegular.ttf') format('svg');
+    /* Legacy iOS */
+}
 
 * {
     margin: 0;
@@ -30,22 +43,6 @@ section {
 
 body {
     line-height: 1;
-}
-
-.btn {
-    background-color: #252525;
-    color: var(--orange);
-    padding: 15px;
-    border-radius: 10px;
-    transition: 350ms all;
-}
-
-.btn:hover {
-    color: #292930;
-    background-color: #FFDC60;
-    -webkit-box-shadow: inset 0px 0px 0px 1px#292930;
-    -moz-box-shadow: inset 0px 0px 0px 1px #292930;
-    box-shadow: inset 0px 0px 0px 1px #292930;
 }
 
 ol,
@@ -82,21 +79,27 @@ table {
 /* HEADER AREA START */
 header {
     display: flex;
-    align-items: flex-end;
     height: 10vh;
 }
 
 header nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    gap: clamp(0.5vw, 4vw, 8vw);
+    width: 100%;
 }
 
 header nav ul {
     display: flex;
 
+}
+
+.logo {
+    position: absolute;
+    margin-left: 10vw;
+}
+
+.navigation {
+    margin: 0 auto;
 }
 
 .logo a {
@@ -110,7 +113,7 @@ header nav ul {
 
 .logo h4 {
     font-size: clamp(1.5rem, 3vw, 2.8rem);
-    font-family: 'Rage Italic', sans-serif;
+    font-family: 'rage italic', sans-serif;
     transform: rotateZ(-4deg);
 }
 
@@ -125,7 +128,6 @@ nav ul li a {
     position: relative;
     transition: .3s;
     font-size: clamp(0.75rem, 2vw, 1.2rem);
-}
 }
 
 nav ul li a:hover {
@@ -183,41 +185,46 @@ nav ul li a:hover::after {
 /* HOME AREA START */
 main {
     display: flex;
-
 }
 
 .home-area {
     display: flex;
     width: 100%;
-    max-width: 1350px;
     height: 90vh;
-    margin: 0 auto;
 }
 
 .home-area-l,
 .home-area-r {
     display: flex;
     flex: 1;
+    width: 50%;
     align-items: center;
 }
 
 .home-area-l {
+    width: 50%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-area {
-    gap: 20px;
-    width: 420px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .home-area-l h1 {
     font-weight: 500;
     color: var(--dark);
-    font-size: 55px;
+    font-size: 3.5vw;
 }
 
 .home-area-l p {
     color: #252525;
+    width: 70%;
+    font-size: 1.5vw;
 }
 
 .text-area {
@@ -231,8 +238,7 @@ main {
 }
 
 .home-area-r img {
-    max-width: 500px;
-    width: auto;
+    width: 45vw;
 }
 
 @keyframes slide {
@@ -244,6 +250,7 @@ main {
         transform: translateX(200px);
     }
 }
+
 /* HOME AREA END */
 
 /* CONTAINER START*/
@@ -251,56 +258,13 @@ main {
 .container {
     height: 100vh;
     color: var(--primary);
-    /* background: linear-gradient(-45deg, #f49c70 0%, #f4f470 13%, #ebf470 25%, #caf470 38%, #b0f470 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%); */
-    /* ;
-    background-size: 400% 400%;
-    animation: animate 15.5s ease-in-out infinite;  */
-    /* background-color:#99ffce;
-    background-image:
-    radial-gradient(at 33% 62%, hsla(145,70%,74%,1) 0px, transparent 50%),
-    radial-gradient(at 54% 72%, hsla(285,70%,69%,1) 0px, transparent 50%),
-    radial-gradient(at 23% 87%, hsla(256,85%,65%,1) 0px, transparent 50%),
-    radial-gradient(at 94% 4%, hsla(167,93%,69%,1) 0px, transparent 50%); */
     background-image: url("images/mesh-679.png");
-    /* background-image: url("images/svg.png"); */
-    /* background-color:#99fff0;
-    background-image:
-    radial-gradient(at 51% 48%, hsla(138,94%,72%,1) 0px, transparent 50%),
-    radial-gradient(at 79% 87%, hsla(194,76%,68%,1) 0px, transparent 50%),
-    radial-gradient(at 18% 20%, hsla(186,93%,75%,1) 0px, transparent 50%); */
-    /* background-color:#ff99d8;
-background-image:
-radial-gradient(at 87% 41%, hsla(21,82%,63%,1) 0px, transparent 50%),
-radial-gradient(at 28% 75%, hsla(43,99%,69%,1) 0px, transparent 50%),
-radial-gradient(at 61% 38%, hsla(66,96%,79%,1) 0px, transparent 50%),
-radial-gradient(at 85% 8%, hsla(225,91%,76%,1) 0px, transparent 50%),
-radial-gradient(at 26% 76%, hsla(312,88%,61%,1) 0px, transparent 50%),
-radial-gradient(at 50% 60%, hsla(200,60%,75%,1) 0px, transparent 50%),
-radial-gradient(at 32% 34%, hsla(14,95%,78%,1) 0px, transparent 50%),
-radial-gradient(at 62% 12%, hsla(319,68%,79%,1) 0px, transparent 50%),
-radial-gradient(at 59% 68%, hsla(120,99%,78%,1) 0px, transparent 50%),
-radial-gradient(at 3% 33%, hsla(61,74%,75%,1) 0px, transparent 50%); */
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-/* 
-@keyframes animate {
-    0% {
-        background-position: 0 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0 50%;
-    }
-} */
 /* CONTAINER END*/
-
 #scrl {
     display: flex;
     align-items: center;
@@ -352,6 +316,7 @@ radial-gradient(at 3% 33%, hsla(61,74%,75%,1) 0px, transparent 50%); */
     }
 
 }
+
 /* CONTENT START*/
 
 .content {
@@ -483,6 +448,7 @@ radial-gradient(at 3% 33%, hsla(61,74%,75%,1) 0px, transparent 50%); */
     font-size: clamp(12px, 1.8vw, 18px);
     font-weight: 100;
 }
+
 /* CONTENT END*/
 
 /* FOOTER AREA START */
