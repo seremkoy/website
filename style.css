@@ -98,6 +98,24 @@ header nav ul {
     margin-left: 10vw;
 }
 
+.logo:hover {
+    animation: shadow-switch 2s ease-in-out infinite;
+}
+
+@keyframes shadow-switch {
+    from {
+        filter: drop-shadow(0px 2px 0px #ffe179) drop-shadow(2px 2px 0px #72b579);
+    }
+
+    50% {
+        filter: drop-shadow(0px 2px 0px #ffe179) drop-shadow(2px 2px 0px #a58167);
+    }
+
+    to {
+        filter: drop-shadow(0px 2px 0px #ffe179) drop-shadow(2px 2px 0px #72b579);
+    }
+}
+
 .navigation {
     margin: 0 auto;
 }
