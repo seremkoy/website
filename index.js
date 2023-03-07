@@ -1,3 +1,4 @@
+//Scroll Back To Top
 let toTop = document.getElementById('scrl')
 toTop.addEventListener('click', function () {
     window.scrollTo({
@@ -6,3 +7,8 @@ toTop.addEventListener('click', function () {
         behavior: 'smooth'
     });
 })
+//Get Year
+let year = new Date();
+year.getFullYear();
+document.getElementById("copy").innerHTML = `Copyright &copy; ${year.getFullYear()} Seremköy v0.5 BETA. Created by rnm - bablock`
+

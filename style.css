@@ -1,19 +1,25 @@
+/* Import Fonts: Lato, Nunito, Roboto -START- */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+/* Import Fonts: Lato, Nunito, Roboto -END- */
 
+/* Site Font -START- */
 @font-face {
     font-family: 'Rage Italic';
+    /* Internet Explorer */
     src: url('./fonts/RageItalicRegular.ttf') format('embedded-opentype'),
-        /* Internet Explorer */
-        url('./fonts/RageItalicRegular.ttf') format('woff2'),
-        /* Super Modern Browsers */
-        url('./fonts/RageItalicRegular.ttf') format('woff'),
-        /* Pretty Modern Browsers */
-        url('./fonts/RageItalicRegular.ttf') format('truetype'),
         /* Safari, Android, iOS */
+        url('./fonts/RageItalicRegular.ttf') format('woff2'),
+        /* Pretty Modern Browsers */
+        url('./fonts/RageItalicRegular.ttf') format('woff'),
+        /* Safari, Android, iOS */
+        url('./fonts/RageItalicRegular.ttf') format('truetype'),
+        /* Legacy iOS */
         url('./fonts/RageItalicRegular.ttf') format('svg');
-    /* Legacy iOS */
 }
 
+/* Site Font -END- */
+
+/* Normalize Css -START- */
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +32,8 @@
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
 }
+
+/* Normalize Css -END- */
 
 article,
 aside,
@@ -68,6 +76,7 @@ table {
     border-spacing: 0;
 }
 
+/* Root -START- */
 :root {
     --primary: #FFFFFF;
     --dark: #292930;
@@ -75,6 +84,8 @@ table {
     --green: #7ef470;
     --gradient: linear-gradient(180deg, #36363E 0%, #292930 100%);
 }
+
+/* Root -END- */
 
 /* HEADER AREA START */
 header {
@@ -85,6 +96,8 @@ header {
 header nav {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
     width: 100%;
 }
 
@@ -94,8 +107,8 @@ header nav ul {
 }
 
 .logo {
-    position: absolute;
-    margin-left: 14vw;
+    flex: 30%;
+    text-align: center;
 }
 
 .logo:hover {
@@ -117,7 +130,7 @@ header nav ul {
 }
 
 .navigation {
-    margin: 0 auto;
+    flex: 70%;
 }
 
 .logo a {
@@ -147,36 +160,74 @@ nav ul li a {
     /* transition: ease-out 250ms; */
     font-size: clamp(0.75rem, 2vw, 1.2rem);
     z-index: 1;
+    padding: 0.7rem;
 }
 
-.navigation ul li a::before, ::after {
+.navigation ul li a::before {
     content: '';
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
-.navigation ul li a::before{
-    transform: scale(0, 1);
-}
-.navigation ul li a::after{
-    transform: scale(0.2, 1);
+    background-color: rgb(255, 255, 255, 0);
+    border-radius: 8px;
+    width: 90%;
+    top: .25em;
+    bottom: .25em;
+    left: .25em;
+    right: .25em;
+    transform: scale(1, 0);
+    box-shadow: rgba(114, 181, 121, 0.4) 0px 0px, rgba(165, 129, 103, 0.3) 0px 0px;
+    transition: transform 200ms ease-out 250ms, box-shadow 200ms ease-out 400ms;
+        z-index: -1; 
 }
 
-nav ul li a:hover::before{
+.navigation ul li a::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    width: 89.5%;
+    top: .25em;
+    bottom: .25em;
+    left: .25em;
+    right: .25em;
+    transform: scale(0, 0.5);
+    transition: transform ease-out 200ms;
+    z-index: -1;
+}
+.navigation ul li a:hover {
+    filter: invert(75%);
+}
+.navigation ul li a:hover::before {
+    transform: scale(1, 1);
+    box-shadow: rgba(114, 181, 121, 0.4) 0px 4px, rgba(165, 129, 103, 0.3) 0px 8px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.navigation ul li a:hover::after {
+    transform: scale(1, 0.5);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* 
+.navigation ul li a::before {
+    transform: scale(0, 1);
+}
+
+.navigation ul li a::after {
+    transform: scale(1, 0);
+}
+
+nav ul li a:hover::before {
     transition: transform ease-out 250ms;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     transform: scale(1, 0.7);
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     border-left: 1px solid black;
     border-right: 1px solid black;
     transform: scale(1, 0.7);
-}
+} */
+
 /*
  nav ul li a:hover {
     color: rgb(75, 108, 9);
@@ -314,6 +365,8 @@ main {
 }
 
 /* CONTAINER END*/
+
+/* Scroll To Top -START- */
 #scrl {
     display: flex;
     align-items: center;
@@ -365,6 +418,8 @@ main {
     }
 
 }
+
+/* Scroll To Top -END- */
 
 /* CONTENT START*/
 
@@ -512,54 +567,69 @@ main {
     background-color: #010501;
     padding: 20px 50px;
 }
-.bottom-text{
+
+.bottom-text {
     width: 100%;
 }
-.social-links ul{
+
+.social-links ul {
     width: 100%;
     gap: 15%;
     text-align: center;
     display: flex;
 }
-.face:hover i{
+
+.face:hover i {
     color: #061ebb;
 }
-.insta:hover i{
- background: #d6249f; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
+
+.insta:hover i {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.youtube:hover i{
+
+.youtube:hover i {
     color: red;
 }
-.social-links .fab{
+
+.social-links .fab {
     transition: 350ms ease;
 }
-.social-links ul li a, .bottom-text ul li a{
+
+.social-links ul li a,
+.bottom-text ul li a {
     color: gray;
 }
-.social-links ul li a:hover  i{
+
+.social-links ul li a:hover i {
     transform: translateY(-10px);
 }
-.text-flex li a{
+
+.text-flex li a {
     padding: 0 10px;
 }
-.text-flex li a:hover{
+
+.text-flex li a:hover {
     border-left: 2px solid #05e13c;
     color: #05e13c;
 }
-.bottom-text ul{
+
+.bottom-text ul {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
-.location{
+
+.location {
     display: flex;
     width: 50%;
     align-items: center;
     justify-content: space-around;
 }
-.location a{
+
+.location a {
     color: gray;
     font-size: 22px;
 }
@@ -571,4 +641,5 @@ main {
     padding: 20px 0;
     background-color: #252525;
 }
+
 /* FOOTER AREA END */
