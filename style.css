@@ -107,7 +107,7 @@ header nav ul {
 }
 
 .logo {
-    flex: 30%;
+    flex: 20%;
     text-align: center;
 }
 
@@ -130,7 +130,14 @@ header nav ul {
 }
 
 .navigation {
-    flex: 70%;
+    flex: 60%;
+    display: flex;
+    justify-content: center;
+}
+.contact{
+    flex: 20%;
+    text-align: center;
+    cursor: pointer;
 }
 
 .logo a {
@@ -152,44 +159,39 @@ h3 {
     text-align: center;
 }
 
-nav ul li a {
-    padding: 0 1vw;
+nav ul li a, .contact {
     text-decoration: none;
     color: var(--dark);
     position: relative;
-    /* transition: ease-out 250ms; */
     font-size: clamp(0.75rem, 2vw, 1.2rem);
-    z-index: 1;
-    padding: 0.7rem;
+    padding: 0.5vw;
 }
 
 .navigation ul li a::before {
     content: '';
     position: absolute;
     background-color: rgb(255, 255, 255, 0);
-    border-radius: 8px;
-    width: 90%;
-    top: .25em;
-    bottom: .25em;
-    left: .25em;
-    right: .25em;
+    border-radius: 15%;
+    top: 0.25em;
+    bottom: 0.25em;
+    left: 0.25em;
+    right: 0.25em;
     transform: scale(1, 0);
-    box-shadow: rgba(114, 181, 121, 0.4) 0px 0px, rgba(165, 129, 103, 0.3) 0px 0px;
-    transition: transform 200ms ease-out 250ms, box-shadow 200ms ease-out 400ms;
-        z-index: -1; 
+    box-shadow: rgb(114 181 121 / 40%) 0px 0px, rgb(165 129 103 / 30%) 0px 0px;
+    transition: transform 150ms ease-out 150ms, box-shadow 150ms ease-out 200ms;
+    z-index: -1;
 }
 
 .navigation ul li a::after {
     content: '';
     position: absolute;
     background-color: rgba(255, 255, 255, 0);
-    width: 89.5%;
     top: .25em;
     bottom: .25em;
     left: .25em;
     right: .25em;
     transform: scale(0, 0.5);
-    transition: transform ease-out 200ms;
+    transition: transform ease-out 150ms;
     z-index: -1;
 }
 .navigation ul li a:hover {
@@ -357,7 +359,7 @@ main {
 
 .container {
     height: 100vh;
-    color: var(--primary);
+    color: var(--dark);
     background-image: url("images/mesh-679.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -451,7 +453,9 @@ main {
     width: 60vw;
     gap: 1rem;
 }
-
+.contHeader{
+    color: var(--primary);
+}
 .contCard {
     background: linear-gradient(180deg, #36363E 0%, #292930 100%);
     border: 1px solid #424245;
@@ -640,6 +644,14 @@ main {
     justify-content: center;
     padding: 20px 0;
     background-color: #252525;
+    color: var(--primary);
 }
 
 /* FOOTER AREA END */
+
+
+@media screen and (max-width: 1200px) {
+    .navigation{
+        display: none;
+    }
+      }
