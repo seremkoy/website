@@ -361,7 +361,7 @@ main {
 /* CONTAINER START*/
 
 .container {
-    height: 100vh;
+    height: auto;
     color: var(--dark);
     background-image: url("images/mesh-679.png");
     background-size: cover;
@@ -433,12 +433,30 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-color: var(--dark);
     padding: 3rem 0;
     gap: 2.5vw;
 }
+.duyuruCont{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+}
+.duyuruIconCont{
+    font-size: 2rem;
+}
+.duyuruTextCont{
 
+}
+.duyuruBaslik{
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+}
+hr{
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid black;
+}
 .contentH {
     font-size: clamp(20px, 2vw, 25px);
     font-weight: 500;
@@ -451,10 +469,15 @@ main {
 
 .contCardMain {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 60vw;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 25%);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .contHeader{
     color: var(--primary);
