@@ -26,7 +26,7 @@ fetch("https://newsapi.org/v2/everything?q=edirne&apiKey=2a549216ecee4d72bf04a04
             let author = element.author
             let title = element.title
             let description = element.description
-            let publishedAt = element.publishedAt
+            let publishedAt = element.publishedAt.slice(0,10)
             let url = element.url
             let urlToImage = element.urlToImage
 
@@ -38,15 +38,14 @@ fetch("https://newsapi.org/v2/everything?q=edirne&apiKey=2a549216ecee4d72bf04a04
             let newsTemplate =
             `
             <div class="card">
-          <div class="photoDiv">
             <img class="news-img" src="${urlToImage}" alt="">
-            </div>
                 <div class="newsContent">
-                    <h1>${title}</h1>
+                    <h1 class="bold">${title}</h1>
                     <p>${description}</p>
+                    <p>${publishedAt}</p>
                     <a href="${url}" class="newsLink" target="_blank">Habere Git</a>
                 </div>
-                </div>
+            </div>
             `
             newsAdd.innerHTML += newsTemplate
     });

@@ -433,8 +433,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0;
-    gap: 2.5vw;
+    padding: 1rem 0;
+    gap: 1rem;
 }
 .duyuruCont{
     display: flex;
@@ -690,16 +690,33 @@ hr{
 
 /* FOOTER AREA END */
 
+.bold{
+    font-weight: 800;
+}
+
 
 .card{
-    max-width: 300px;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     border: 1px solid black;
 }
-.news-img{
-    max-width: 200px;
+.newsContent{
+margin: 1rem;
 }
-.photoDiv{
-    width: fit-content;
-    margin: 0 auto;
+.newsContent h1,p{
+    margin-bottom: 0.5rem;
 }
+.newsContent a {
+    background-color: blue;
+    color: white;
+}
+.contentHeader{
+    padding: 1rem;
+    border-radius: 5%;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 25%);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);    
+}
+
