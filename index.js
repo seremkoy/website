@@ -18,7 +18,6 @@ document.getElementById("copy").innerHTML = `Copyright &copy; ${year.getFullYear
 fetch("https://newsapi.org/v2/everything?q=edirne&apiKey=2a549216ecee4d72bf04a04531f22452")
 .then((response) => response.json())
 .then( (data) => {
-    console.log(data.articles)
     let news = data.articles
     const newsAdd = document.getElementById("contCardMain")
     news.forEach(element => {
@@ -26,14 +25,14 @@ fetch("https://newsapi.org/v2/everything?q=edirne&apiKey=2a549216ecee4d72bf04a04
             let author = element.author
             let title = element.title
             let description = element.description
-            let publishedAt = element.publishedAt.slice(0,10)
+            let publishedAt = element.publishedAt.slice(0,10).split("-")
+            let publishedAtv2 = publishedAt[2] + "-" + publishedAt[1] + "-" + publishedAt[0]
             let url = element.url
             let urlToImage = element.urlToImage
 
             if(author === null){
                 author = "Bulunamadı"
             }
-            console.log(author)
 
             let newsTemplate =
             `
@@ -42,8 +41,11 @@ fetch("https://newsapi.org/v2/everything?q=edirne&apiKey=2a549216ecee4d72bf04a04
                 <div class="newsContent">
                     <h1 class="bold">${title}</h1>
                     <p>${description}</p>
-                    <p>${publishedAt}</p>
-                    <a href="${url}" class="newsLink" target="_blank">Habere Git</a>
+                    <p>Yayınlanma Tarihi: ${publishedAtv2}</p>
+                    <p>Kaynak: ${author}</p>
+                   
+                        <button class="newsLink" type="button"> <a href="${url}" target="_blank">Habere Git                    </a></button>
+
                 </div>
             </div>
             `

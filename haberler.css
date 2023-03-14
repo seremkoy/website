@@ -134,12 +134,14 @@ header nav ul {
     display: flex;
     justify-content: center;
 }
-.contact{
+
+.contact {
     flex: 20%;
     text-align: center;
     cursor: pointer;
 }
-.contact a{
+
+.contact a {
     color: inherit;
 }
 
@@ -162,7 +164,8 @@ h3 {
     text-align: center;
 }
 
-nav ul li a, .contact {
+nav ul li a,
+.contact {
     text-decoration: none;
     color: var(--dark);
     position: relative;
@@ -197,9 +200,11 @@ nav ul li a, .contact {
     transition: transform ease-out 150ms;
     z-index: -1;
 }
+
 .navigation ul li a:hover {
     filter: invert(75%);
 }
+
 .navigation ul li a:hover::before {
     transform: scale(1, 1);
     box-shadow: rgba(114, 181, 121, 0.4) 0px 4px, rgba(165, 129, 103, 0.3) 0px 8px;
@@ -436,43 +441,54 @@ main {
     padding: 1rem 0;
     gap: 1rem;
 }
-.duyuruCont{
+
+.duyuruCont {
     display: flex;
     flex-direction: row;
     padding: 2rem;
     gap: 2rem;
     width: 50%;
 }
-.duyuruIconCont1, .duyuruIconCont2, .duyuruIconCont3{
+
+.duyuruIconCont1,
+.duyuruIconCont2,
+.duyuruIconCont3 {
     font-size: 2rem;
     width: 200px;
     height: 150px;
     background-size: contain;
     background-repeat: no-repeat;
 }
-.duyuruIconCont1{
+
+.duyuruIconCont1 {
     background-image: url("images/muhtar4.png");
 }
-.duyuruIconCont2{
+
+.duyuruIconCont2 {
     background-image: url("images/yonetim8.png");
 }
-.duyuruIconCont3{
+
+.duyuruIconCont3 {
     background-image: url("images/developer5.png");
 }
-.duyuruTextCont{
-display: flex;
-flex-direction: column;
-gap: 1rem;
+
+.duyuruTextCont {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
-.duyuruBaslik{
+
+.duyuruBaslik {
     padding-bottom: 0.5rem;
     font-weight: 700;
 }
-hr{
+
+hr {
     width: 95%;
     border: none;
     border-bottom: 1px solid black;
 }
+
 .contentH {
     font-size: clamp(20px, 2vw, 25px);
     font-weight: 500;
@@ -494,9 +510,11 @@ hr{
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
 }
-.contHeader{
+
+.contHeader {
     color: var(--primary);
 }
+
 .contCard {
     background: linear-gradient(180deg, #36363E 0%, #292930 100%);
     border: 1px solid #424245;
@@ -690,33 +708,45 @@ hr{
 
 /* FOOTER AREA END */
 
-.bold{
+.bold {
     font-weight: 800;
 }
 
 
-.card{
+.card {
     width: 18rem;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     border: 1px solid black;
 }
-.newsContent{
-margin: 1rem;
+
+.newsContent {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
-.newsContent h1,p{
+
+/* .newsContent h1,p{
     margin-bottom: 0.5rem;
-}
+} */
+
 .newsContent a {
-    background-color: blue;
     color: white;
 }
-.contentHeader{
+
+.contentHeader {
     padding: 1rem;
     border-radius: 5%;
     box-shadow: 0 4px 30px rgb(0 0 0 / 25%);
     backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);    
+    -webkit-backdrop-filter: blur(25px);
 }
 
+.newsLink {
+    border-radius: 5%;
+    width: 7rem;
+    padding: 0.5rem;
+    background-color: #3074ff;
+}
