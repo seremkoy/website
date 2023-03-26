@@ -295,10 +295,7 @@ nav ul li a:hover::after {
 /* HOME AREA START */
 main {
     display: flex;
-}
-
-.home-area {
-    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 90vh;
 }
@@ -718,7 +715,8 @@ hr {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    border: 1px solid black;
+    box-shadow: 0px 0px 1.5px black;
+    border-radius: 3%;
 }
 
 .newsContent {
@@ -727,10 +725,6 @@ hr {
     flex-direction: column;
     gap: 1rem;
 }
-
-/* .newsContent h1,p{
-    margin-bottom: 0.5rem;
-} */
 
 .newsContent a {
     color: white;
@@ -750,3 +744,57 @@ hr {
     padding: 0.5rem;
     background-color: #3074ff;
 }
+.news-img{
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* background-image: linear-gradient( 315deg, hsl(0deg 0% 0%) 1%, hsl(175deg 85% 45%) 50%, hsl(175deg 85% 89%) 50%, hsl(175deg 85% 95%) 50%, hsl(0deg 0% 100%) 99% ); */
+/* background-image: linear-gradient( 315deg, hsl(240deg 100% 50%) 0%, hsl(238deg 98% 52%) 5%, hsl(236deg 95% 54%) 10%, hsl(234deg 93% 56%) 15%, hsl(232deg 91% 58%) 20%, hsl(230deg 88% 60%) 25%, hsl(228deg 86% 62%) 30%, hsl(226deg 84% 64%) 35%, hsl(224deg 82% 66%) 40%, hsl(222deg 79% 68%) 45%, hsl(220deg 76% 70%) 50%, hsl(218deg 75% 72%) 55%, hsl(216deg 71% 74%) 60%, hsl(214deg 69% 76%) 65%, hsl(212deg 68% 78%) 70%, hsl(210deg 65% 80%) 75%, hsl(208deg 63% 82%) 80%, hsl(207deg 60% 84%) 85%, hsl(205deg 58% 86%) 90%, hsl(201deg 55% 88%) 95%, hsl(200deg 53% 90%) 100% ); */
+/* background-image: linear-gradient( 315deg, hsl(277deg 65% 57%) 0%, hsl(262deg 73% 65%) 5%, hsl(247deg 82% 71%) 10%, hsl(233deg 91% 73%) 14%, hsl(224deg 97% 73%) 19%, hsl(218deg 99% 73%) 24%, hsl(213deg 98% 75%) 29%, hsl(210deg 94% 77%) 33%, hsl(207deg 87% 80%) 38%, hsl(204deg 78% 84%) 43%, hsl(201deg 64% 88%) 48%, hsl(201deg 64% 88%) 52%, hsl(204deg 78% 84%) 57%, hsl(207deg 87% 80%) 62%, hsl(210deg 94% 77%) 67%, hsl(213deg 98% 75%) 71%, hsl(218deg 99% 73%) 76%, hsl(224deg 97% 73%) 81%, hsl(233deg 91% 73%) 86%, hsl(247deg 82% 71%) 90%, hsl(262deg 73% 65%) 95%, hsl(277deg 65% 57%) 100% ); */
+/* background-image: linear-gradient( 315deg, hsl(277deg 65% 57%) 63%, hsl(262deg 73% 65%) 78%, hsl(247deg 82% 71%) 85%, hsl(233deg 91% 73%) 89%, hsl(224deg 97% 73%) 92%, hsl(218deg 99% 73%) 94%, hsl(213deg 98% 75%) 96%, hsl(210deg 94% 77%) 97%, hsl(207deg 87% 80%) 98%, hsl(204deg 78% 84%) 99%, hsl(201deg 64% 88%) 100%, hsl(201deg 64% 88%) 100%, hsl(204deg 78% 84%) 100%, hsl(207deg 87% 80%) 101%, hsl(210deg 94% 77%) 101%, hsl(213deg 98% 75%) 101%, hsl(218deg 99% 73%) 101%, hsl(224deg 97% 73%) 101%, hsl(233deg 91% 73%) 101%, hsl(247deg 82% 71%) 100%, hsl(262deg 73% 65%) 100%, hsl(277deg 65% 57%) 100% ); */
+/* 
+background-image: linear-gradient(
+  180deg,
+  hsl(267deg 100% 7%) 0%,
+  hsl(283deg 95% 13%) 0%,
+  hsl(299deg 89% 20%) 0%,
+  hsl(315deg 84% 27%) 0%,
+  hsl(332deg 80% 34%) 1%,
+  hsl(348deg 75% 42%) 1%,
+  hsl(8deg 67% 50%) 1%,
+  hsl(38deg 68% 57%) 2%,
+  hsl(68deg 70% 65%) 2%,
+  hsl(98deg 72% 74%) 3%,
+  hsl(129deg 75% 82%) 4%,
+  hsl(159deg 83% 91%) 5%,
+  hsl(179deg 75% 91%) 7%,
+  hsl(189deg 64% 81%) 8%,
+  hsl(199deg 60% 72%) 10%,
+  hsl(209deg 57% 64%) 12%,
+  hsl(219deg 55% 55%) 15%,
+  hsl(229deg 58% 48%) 18%,
+  hsl(232deg 63% 40%) 22%,
+  hsl(233deg 64% 33%) 27%,
+  hsl(233deg 66% 25%) 33%,
+  hsl(234deg 67% 18%) 42%,
+  hsl(235deg 68% 11%) 56%,
+  hsl(236deg 70% 4%) 98%
+); */
+/* 
+background: -webkit-linear-gradient(top right, #D5ABC2, #44AEEC); */
