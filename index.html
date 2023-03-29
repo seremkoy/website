@@ -17,6 +17,7 @@
 <body>
   <a href="javascript:void(0)" id="scrl"><i class="fa-solid fa-arrow-up"></i></a>
   <div class="container">
+    <header>
       <nav>
         <div class="logo">
           <a href="index.html">
@@ -25,77 +26,125 @@
         </div>
         <div class="navigation">
           <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="duyurular.html">Duyurular</a></li>
-            <li><a href="haberler.html">Haberler</a></li>
-            <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="galeri.html">Galeri</a></li>
-            <li><a href="yonetim.html">Yönetim</a></li>
+            <li><a href="index.html" class="nav">Ana Sayfa</a></li>
+            <li><a href="duyurular.html" class="nav">Duyurular</a></li>
+            <li><a href="haberler.html" class="nav">Haberler</a></li>
+            <li><a href="Piyasalar.html" class="nav">Piyasalar</a></li>
+            <li><a href="hakkimizda.html" class="nav">Hakkımızda</a></li>
+            <li><a href="yonetim.html" class="nav">Yönetim</a></li>
           </ul>
         </div>
         <div class="contact"><a href="mailto:seremkoy@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a></button>
         </div>
-      </nav>
-    <main>
-      <div class="home-area-l">
-        <div class="text-area">
-          <h1>Hoş Geldiniz!</h1>
-          <p>
-            Site'de Seremköy hakkında duyurulara, ülkedeki son haberlere, Dolar,Euro vb. para piyasalarına ve hava
-            durumu verilerine ulaşabilirsiniz
-          </p>
+        <!-- <input id="toggle" type="checkbox">
+          <label for="toggle" class="mobile-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="mobile-nav">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="duyurular.html">Duyurular</a></li>
+            <li><a href="haberler.html">Haberler</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="yonetim.html">Yönetim</a></li>
+          </ul> -->
+        <div class="mobile-menu">
+          <input id="hamburger-input" type="checkbox">
+          <label id="hamburger" for="hamburger-input">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </label>
+          <div class="menu-list">
+            <ul class="menu-list-ul">
+              <li class="menu-list-li"><a href="index.html">Anasayfa</a></li>
+              <li class="menu-list-li"><a href="duyurular.html">Duyurular</a></li>
+              <li class="menu-list-li"><a href="haberler.html">Haberler</a></li>
+              <li class="menu-list-li"><a href="piyasalar.html">Piyasalar</a></li>
+              <li class="menu-list-li"><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li class="menu-list-li"><a href="yonetim.html">Yönetim</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="home-area-r">
-        <img src="images/Farmer-amico (3).png" alt="" />
-      </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home-area">
+        <div class="home-area-l">
+          <svg viewBox="0 0 200 200" id="svg" xmlns="http://www.w3.org/2000/svg">
+            <path id="path" fill="#C2BBA6"
+              d="M42.4,-71.6C54.1,-66.6,62.1,-53.6,62.7,-40.3C63.3,-27,56.4,-13.5,55.9,-0.3C55.3,12.9,61.1,25.7,59.9,38C58.7,50.2,50.5,61.7,39.4,67.3C28.2,72.8,14.1,72.3,2.7,67.6C-8.6,62.9,-17.3,53.9,-30.6,49.6C-43.9,45.3,-61.9,45.7,-67.3,38.2C-72.7,30.7,-65.5,15.4,-62.1,2C-58.6,-11.4,-59,-22.8,-57.1,-36.4C-55.2,-50,-51.1,-65.7,-41.2,-71.7C-31.3,-77.6,-15.7,-73.9,-0.2,-73.6C15.3,-73.3,30.7,-76.5,42.4,-71.6Z"
+              transform="translate(100 100)" />
+          </svg>
+          <div class="text-area">
+            <h1>Seremköy'e <br> Hoş Geldiniz!</h1>
+
+            <p>
+              Cemiyetler,Mevlüt ve Cenaze Duyuruları Gibi Anlık Haberleri Sitemizden Takip Edebilirsiniz.
+            </p>
+
+          </div>
+        </div>
+        <div class="home-area-r">
+          <img src="images/Farmer-amico (3).png" alt="" />
+        </div>
+      </section>
     </main>
-    <section class="content">
+    <div class="content">
       <div class="contHeader">
         <h1 class="contentH">Header</h1>
         <p class="contentP">Lorem ipsum dolor sit amet consectetur.</p>
       </div>
       <div class="contCardMain">
         <div class="contCard">
-          <iframe src="https://tr.widgets.investing.com/live-currency-cross-rates?theme=lightTheme&hideTitle=true&pairs=1,66,18" width="100%" height="600" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe><div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;">Araç Sağlayıcı: <a href="https://tr.investing.com?utm_source=WMT&amp;utm_medium=referral&amp;utm_campaign=LIVE_CURRENCY_X_RATES&amp;utm_content=Footer%20Link" target="_blank" rel="nofollow">Investing.com</a></div>
-          </div>
-        <div class="contCard">
-          <iframe src="https://tr.widgets.investing.com/crypto-currency-rates?theme=lightTheme&hideTitle=true&pairs=945629,1115839,1073899,1052426,1058813,1052351,1058142,1086982,1056828,1173201,1131278,1177179,1173409,1072278,1118146" width="100%" height="600" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe><div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;">Araç Sağlayıcı: <a href="https://tr.investing.com?utm_source=WMT&amp;utm_medium=referral&amp;utm_campaign=CRYPTO_CURRENCY_RATES&amp;utm_content=Footer%20Link" target="_blank" rel="nofollow">Investing.com</a></div>
+          <a href="" class="ani-b"><span><i class="fa-sharp fa-solid fa-house icon"></i></span></a>
+          <a href="">
+            <h1 class="contCardH">Duyurular</h1>
+          </a>
+          <a href="">
+            <p class="contCardP">
+              Köydeki vefat, düğün, etkinlik gibi haberlere ulaşmak için, duyurular bölümünü kullanınız.
+            </p>
+          </a>
+
         </div>
-        <div class="contCard">
+        <div id="contCard2" class="contCard">
+          <a href="" class="ani-b"><span><i class="fa-solid fa-pen icon"></i></span></a>
+          <a href="">
+            <h1 class="contCardH">Haberler</h1>
+          </a>
+          <a href="">
+            <p class="contCardP">
+              Bu bölümde ülke genelinden haberler yer alır. "Habere Git" butonunu kullanarak haberin tamamına
+              ulaşabilirsiniz.
+            </p>
+          </a>
+        </div>
+        <div id="contCard3" class="contCard">
           <a href="#" class="ani-b"><span><i class="fa-solid fa-landmark icon"></i></span></a>
-          <h1 class="contCardH">Hakkımızda</h1>
-          <p class="contCardP">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-            veritatis nemo veniam, totam consequuntur
-          </p>
+          <a href="">
+            <h1 class="contCardH">Piyasalar</h1>
+          </a>
+          <a href="">
+            <p class="contCardP">
+              Döviz, borsa istanbul, kripto paralar ve hava durumu verilerine göz atabilirsiniz.
+            </p>
+          </a>
         </div>
-        <div class="contCard">
-          <a href="" class="ani-b"><span><i class="fa-solid fa-camera-retro icon"></i></span></a>
-          <h1 class="contCardH">Galeri</h1>
-          <p class="contCardP">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-            veritatis nemo veniam, totam consequuntur
-          </p>
+        <div id="contCard5" class="contCard">
+          <a href="yonetim.html" class="ani-b"><span><i class="fa-solid fa-user-tie icon"></i></span></a>
+          <a href="">
+            <h1 class="contCardH">Yönetim</h1>
+          </a>
+          <a href="">
+            <p class="contCardP">
+              Muhtar, köy yönetimi ve site geliştiricilerinin bilgileri bu sayfada yer alır. 
+            </p>
+          </a>
         </div>
-        <div class="contCard">
-          <a href="" class="ani-b"><span><i class="fa-solid fa-user-tie icon"></i></span></a>
-          <h1 class="contCardH">Yönetim</h1>
-          <p class="contCardP">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-            veritatis nemo veniam, totam consequuntur
-          </p>
-        </div>
-        <div class="contCard">
-          <a href="" class="ani-b"><span><i class="fa-solid fa-phone-volume icon"></i></span></a>
-          <h1 class="contCardH">İletişim</h1>
-          <p class="contCardP">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-            veritatis nemo veniam, totam consequuntur
-          </p>
-        </div>
+
       </div>
-    </section>
+    </div>
     <footer>
       <div class="footer-main">
         <div class="social-links">
@@ -111,10 +160,10 @@
         </div>
         <div class="bottom-text">
           <ul class="text-flex">
-            <li><a href="">Duyurular</a></li>
+            <li><a href="duyurular.html">Duyurular</a></li>
             <li><a href="">Cemiyetler</a></li>
             <li><a href="">Hakkımızda</a></li>
-            <li><a href="">Yönetim</a></li>
+            <li><a href="yonetim.html">Yönetim</a></li>
           </ul>
         </div>
         <div class="location">

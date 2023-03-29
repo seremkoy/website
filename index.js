@@ -13,7 +13,7 @@ toTop.addEventListener('click', function () { //Butona click eventi
 let year = new Date();
 year.getFullYear(); //Yılın seçilmesi
 //Yılın footer'a yazdırılması
-document.getElementById("copy").innerHTML = `Copyright &copy; ${year.getFullYear()} Seremköy v0.5 BETA. Created by rnm - bablock`
+document.getElementById("copy").innerHTML = `Tüm hakları saklıdır. &copy; ${year.getFullYear()} Seremköy v.0.5  -- <span class="cr">Created by: </span><span class="dvlpr">rnm & fatih nayir</span>`
 //Copyright için tarih -END-
 
 // 2a549216ecee4d72bf04a04531f22452  news api key
@@ -136,4 +136,14 @@ fetch("https://newsapi.org/v2/everything?q=edirne&apiKey=2a549216ecee4d72bf04a04
 // https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/2022-11-24/currencies/usd.json
 
 
-const className = document.querySelectorAll("className")
+//MOBILE NAV BEGIN
+
+const hamburgerButton = document.getElementById("hamburger")
+const mobileNav = document.querySelector(".menu-list")
+const hiddenLength = document.querySelectorAll(".hidden").length
+
+// hamburgerButton.addEventListener("click", function () {
+//     mobileNav.classList.toggle("hidden")
+// })
+
+//MOBILE NAV END

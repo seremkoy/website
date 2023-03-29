@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seremköy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+  <a href="javascript:void(0)" id="scrl"><i class="fa-solid fa-arrow-up"></i></a>
+  <div class="container-d">
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <h4>Seremköy</h4>
+          </a>
+        </div>
+        <div class="navigation">
+          <ul>
+            <li><a href="index.html" class="nav">Ana Sayfa</a></li>
+            <li><a href="duyurular.html" class="nav">Duyurular</a></li>
+            <li><a href="haberler.html" class="nav">Haberler</a></li>
+            <li><a href="Piyasalar.html" class="nav">Piyasalar</a></li>
+            <li><a href="hakkimizda.html" class="nav">Hakkımızda</a></li>
+            <li><a href="yonetim.html" class="nav">Yönetim</a></li>
+          </ul>
+        </div>
+        <div class="contact"><a href="mailto:seremkoy@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a></button>
+        </div>
+        <!-- <input id="toggle" type="checkbox">
+          <label for="toggle" class="mobile-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="mobile-nav">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="duyurular.html">Duyurular</a></li>
+            <li><a href="haberler.html">Haberler</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="yonetim.html">Yönetim</a></li>
+          </ul> -->
+        <div class="mobile-menu">
+          <input id="hamburger-input" type="checkbox">
+          <label id="hamburger" for="hamburger-input">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </label>
+          <div class="menu-list">
+            <ul class="menu-list-ul">
+              <li class="menu-list-li"><a href="index.html">Anasayfa</a></li>
+              <li class="menu-list-li"><a href="duyurular.html">Duyurular</a></li>
+              <li class="menu-list-li"><a href="haberler.html">Haberler</a></li>
+              <li class="menu-list-li"><a href="piyasalar.html">Piyasalar</a></li>
+              <li class="menu-list-li"><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li class="menu-list-li"><a href="yonetim.html">Yönetim</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="content-d">
+      <div class="title-nav">
+        <ul>
+          <li>
+            <a href="index.html">Ana Sayfa</a>
+          </li>
+  
+          <li>
+            Piyasalar
+          </li>
+        </ul>
+      </div>
+      <div class="piyasalar-cont-main">
+        <div class="forex-cont">
+          <h1 class="market-header">Döviz</h1>
+          <div class="forex">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <div class="tradingview-widget-copyright"><a href="https://tr.tradingview.com/markets/currencies/"
+                  rel="noopener" target="_blank"><span class="blue-text">Forex</span></a> TradingView'den</div>
+              <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+                  {
+                    "colorTheme": "dark",
+                      "dateRange": "1G",
+                        "showChart": true,
+                          "locale": "tr",
+                            "width": "100%",
+                              "height": "600",
+                                "largeChartUrl": "",
+                                  "isTransparent": false,
+                                    "showSymbolLogo": true,
+                                      "showFloatingTooltip": true,
+                                        "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                                          "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                                            "gridLineColor": "rgba(42, 46, 57, 0)",
+                                              "scaleFontColor": "rgba(134, 137, 147, 1)",
+                                                "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                                                  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                                                    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                                                      "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                                                        "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+                                                          "tabs": [
+                                                            {
+                                                              "title": "Forex",
+                                                              "symbols": [
+                                                                {
+                                                                  "s": "FX:USDTRY",
+                                                                  "d": "USD/TRY"
+                                                                },
+                                                                {
+                                                                  "s": "FX:EURTRY",
+                                                                  "d": "EUR/TRY"
+                                                                },
+                                                                {
+                                                                  "s": "SAXO:GBPTRY",
+                                                                  "d": "GBP/TRY"
+                                                                },
+                                                                {
+                                                                  "s": "FX_IDC:JPYTRY",
+                                                                  "d": "JPY/TRY"
+                                                                },
+                                                                {
+                                                                  "s": "CURRENCYCOM:PLNTRY",
+                                                                  "d": "PLN/TRY"
+                                                                }
+                                                              ],
+                                                              "originalTitle": "Forex"
+                                                            }
+                                                          ]
+                  }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </div>
+        </div>
+        <div class="bist-cont">
+          <h1 class="market-header">BİST100</h1>
+          <div class="market">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <div class="tradingview-widget-copyright"><a href="https://tr.tradingview.com/markets/stocks-turkey/"
+                  rel="noopener" target="_blank"><span class="blue-text">Bugünkü hisseler</span></a> TradingView
+                tarafından</div>
+              <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+                  {
+                    "colorTheme": "dark",
+                      "dateRange": "1A",
+                        "exchange": "BIST",
+                          "showChart": true,
+                            "locale": "tr",
+                              "largeChartUrl": "",
+                                "isTransparent": false,
+                                  "showSymbolLogo": false,
+                                    "showFloatingTooltip": false,
+                                      "width": "100%",
+                                        "height": "600",
+                                          "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                                            "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+                                              "gridLineColor": "rgba(42, 46, 57, 0)",
+                                                "scaleFontColor": "rgba(134, 137, 147, 1)",
+                                                  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+                                                    "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+                                                      "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+                                                        "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+                                                          "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+                  }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </div>
+        </div>
+        <div class="crypto-cont">
+          <h1 class="market-header">Kripto Piyasaları</h1>
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a
+                href="https://tr.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener"
+                target="_blank"><span class="blue-text">Kripto piyasaları</span></a> TradingView tarafından</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js"
+              async>
+                {
+                  "width": "100%",
+                    "height": "490",
+                      "defaultColumn": "performance",
+                        "screener_type": "crypto_mkt",
+                          "displayCurrency": "USD",
+                            "colorTheme": "dark",
+                              "locale": "tr"
+                }
+              </script>
+          </div>
+      </div>
+      <div class="weather-cont">
+        <h1 class="market-header">Hava Durumu</h1>
+        <div class="weather">
+          <iframe src="https://www.meteoblue.com/tr/hava/widget/three/edirne_t%c3%bcrkiye_747712?geoloc=fixed&nocurrent=0&noforecast=0&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=dark"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 100%; height:623px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/tr/hava/hafta/edirne_t%c3%bcrkiye_747712?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-main">
+        <div class="social-links">
+          <ul>
+            <li><a class="face" href="https://www.facebook.com/seremkoy22/?locale=tr_TR" target="_blank"><i
+                  class="fab fa-facebook fa-2x"></i>Facebook</a></li>
+            <li><a class="insta" href="https://www.instagram.com/seremkoy22/" target="_blank"><i
+                  class="fab fa-instagram fa-2x"></i>Instagram</a></li>
+            <li><a class="youtube" href="https://www.youtube.com/@seremkoy2265" target="_blank"><i
+                  class="fab fa-youtube fa-2x"></i>YouTube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-text">
+          <ul class="text-flex">
+            <li><a href="duyurular.html">Duyurular</a></li>
+            <li><a href="">Cemiyetler</a></li>
+            <li><a href="">Hakkımızda</a></li>
+            <li><a href="yonetim.html">Yönetim</a></li>
+          </ul>
+        </div>
+        <div class="location">
+          <a href="https://goo.gl/maps/4EdWeExA9He6yqnW7" target="_blank">
+            <h1>
+              <i class="fa-solid fa-map-location-dot"></i> Haritayı Aç
+            </h1>
+          </a>
+          <a href="https://www.google.com/maps/dir//Serem,+22680+Serem%2FMeri%C3%A7%2FEdirne/@41.3140175,26.5145435,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14b304098734c259:0x9f7345ae5e0e499c!2m2!1d26.5158!2d41.3149"
+            target="_blank">
+            <h1>
+              <i class="fa-solid fa-map-pin"></i> Yol Tarifi Al
+            </h1>
+          </a>
+        </div>
+      </div>
+
+    </footer>
+    <div class="copyright">
+      <p id="copy"></p>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
