@@ -13,7 +13,7 @@ toTop.addEventListener('click', function () { //Butona click eventi
 let year = new Date();
 year.getFullYear(); //Yılın seçilmesi
 //Yılın footer'a yazdırılması
-document.getElementById("copy").innerHTML = `Tüm hakları saklıdır. &copy; ${year.getFullYear()} Seremköy v.0.5  -- <span class="cr">Created by: </span><span class="dvlpr">rnm & fatih nayir</span>`
+document.getElementById("copy").innerHTML = `Tüm hakları saklıdır. &copy; ${year.getFullYear()} Seremköy v.0.5 <br><span class="cr"> </span><br><span class="dvlpr">Creators rnm💀 - fatih nayir🐦</span>`
 //Copyright için tarih -END-
 
 // 2a549216ecee4d72bf04a04531f22452  news api key

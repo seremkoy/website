@@ -6,21 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seremköy</title>
-  <link rel="stylesheet" href="haberler.css" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
 </head>
 
 <body>
   <a href="javascript:void(0)" id="scrl"><i class="fa-solid fa-arrow-up"></i></a>
-  <div class="container">
+  <div class="container-d">
     <header>
       <nav>
         <div class="logo">
@@ -30,24 +26,64 @@
         </div>
         <div class="navigation">
           <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="duyurular.html">Duyurular</a></li>
-            <li><a href="haberler.html">Haberler</a></li>
-            <li><a href="piyasalar.html">Piyasalar</a></li>
-            <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="yonetim.html">Yönetim</a></li>
+            <li><a href="index.html" class="nav">Ana Sayfa</a></li>
+            <li><a href="duyurular.html" class="nav">Duyurular</a></li>
+            <li><a href="haberler.html" class="nav">Haberler</a></li>
+            <li><a href="Piyasalar.html" class="nav">Piyasalar</a></li>
+            <li><a href="hakkimizda.html" class="nav">Hakkımızda</a></li>
+            <li><a href="yonetim.html" class="nav">Yönetim</a></li>
           </ul>
         </div>
         <div class="contact"><a href="mailto:seremkoy@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a></button>
         </div>
+        <!-- <input id="toggle" type="checkbox">
+          <label for="toggle" class="mobile-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="mobile-nav">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="duyurular.html">Duyurular</a></li>
+            <li><a href="haberler.html">Haberler</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="yonetim.html">Yönetim</a></li>
+          </ul> -->
+        <div class="mobile-menu">
+          <input id="hamburger-input" type="checkbox">
+          <label id="hamburger" for="hamburger-input">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </label>
+          <div class="menu-list">
+            <ul class="menu-list-ul">
+              <li class="menu-list-li"><a href="index.html">Anasayfa</a></li>
+              <li class="menu-list-li"><a href="duyurular.html">Duyurular</a></li>
+              <li class="menu-list-li"><a href="haberler.html">Haberler</a></li>
+              <li class="menu-list-li"><a href="piyasalar.html">Piyasalar</a></li>
+              <li class="menu-list-li"><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li class="menu-list-li"><a href="yonetim.html">Yönetim</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <div class="content">
-      <h1 class="contentHeader">HABERLER</h1>
-      <div id="contCardMain">
-        <!-- <span id="artiBes">5 haber daha yükle</span> -->
+    <section class="content-d">
+      <div class="title-nav">
+        <ul>
+          <li>
+            <a href="index.html">Ana Sayfa</a>
+          </li>
+  
+          <li>
+            Haberler
+          </li>
+        </ul>
       </div>
-    </div>
+        <div id="contCardMain">
+          <!-- <span id="artiBes">5 haber daha yükle</span> -->
+        </div>
+    </section>
     <footer>
       <div class="footer-main">
         <div class="social-links">
@@ -63,10 +99,10 @@
         </div>
         <div class="bottom-text">
           <ul class="text-flex">
-            <li><a href="">Duyurular</a></li>
+            <li><a href="duyurular.html">Duyurular</a></li>
             <li><a href="">Cemiyetler</a></li>
             <li><a href="">Hakkımızda</a></li>
-            <li><a href="">Yönetim</a></li>
+            <li><a href="yonetim.html">Yönetim</a></li>
           </ul>
         </div>
         <div class="location">
@@ -90,7 +126,6 @@
     </div>
   </div>
   <script src="index.js"></script>
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>
