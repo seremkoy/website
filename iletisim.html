@@ -12,11 +12,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
   <a href="javascript:void(0)" id="scrl"><i class="fa-solid fa-arrow-up"></i></a>
-  <div class="container-d">
+  <div class="container-d-i">
     <header>
       <nav>
         <div class="logo">
@@ -34,20 +35,8 @@
             <li><a href="yonetim.html" class="nav">Yönetim</a></li>
           </ul>
         </div>
-        <div class="contact"><a href="mailto:seremkoy@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a></button>
+        <div class="contact"><a href="iletisim.html"><i class="fa-solid fa-envelope fa-xl"></i></a></button>
         </div>
-        <!-- <input id="toggle" type="checkbox">
-          <label for="toggle" class="mobile-toggle">
-            <div class="menu-button"></div>
-          </label>
-          <ul class="mobile-nav">
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="duyurular.html">Duyurular</a></li>
-            <li><a href="haberler.html">Haberler</a></li>
-            <li><a href="galeri.html">Galeri</a></li>
-            <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="yonetim.html">Yönetim</a></li>
-          </ul> -->
         <div class="mobile-menu">
           <input id="hamburger-input" type="checkbox">
           <label id="hamburger" for="hamburger-input">
@@ -76,15 +65,57 @@
           </li>
 
           <li>
-            Haberler
+            İletişim
           </li>
         </ul>
       </div>
-      <div id="contCardMain">
-      </div>
-      <div class="newsNav">
-        <span id="forward">Geri</span>
-        <span id="next">İleri</span>
+      <div class="form-cont-main">
+
+        <div class="contact-info">
+          <p>Köyde gerçekleşen olaylar hakkında bizi bilgilendirebilir, sitedeki hataları bildirebilir ya da öneride
+            bulunabilirsiniz. </p>
+        </div>
+        <form id="form">
+          <div class="form-main">
+            <label for="from_name">İsminiz;</label>
+            <div class="name-cont">
+              <input type="text" name="from_name" id="from_name">
+            </div>
+            <label for="message">Mesajınız;</label>
+            <div class="message-cont">
+              <textarea type="text" name="message" id="message" rows="10" cols="100"></textarea>
+              <input type="submit" id="button" value="Send Email">
+            </div>
+          </div>
+        </form>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+          emailjs.init('Ry_GFbXvGKZkNu7lu')
+        </script>
+        <script>
+
+          const btn = document.getElementById('button');
+
+          document.getElementById('form')
+            .addEventListener('submit', function (event) {
+              event.preventDefault();
+
+              btn.value = 'Sending...';
+
+              const serviceID = 'default_service';
+              const templateID = 'template_guahqg5';
+
+              emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                  btn.value = 'Send Email';
+                  alert('Mesajınız gönderildi!');
+                }, (err) => {
+                  btn.value = 'Send Email';
+                  alert(JSON.stringify(err));
+                });
+            });</script>
       </div>
     </section>
     <footer>
@@ -128,7 +159,27 @@
       <p id="copy"></p>
     </div>
   </div>
-  <script src="haber.js"></script>
+  <!-- <script src="index.js"></script> -->
+  <!-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6LchCGElAAAAALxD9NjjHEEhxy6Ma0UWKHt1WrE1"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6LchCGElAAAAALxD9NjjHEEhxy6Ma0UWKHt1WrE1', {action: 'login'}).then(function(token) {
+      6LchCGElAAAAALxD9NjjHEEhxy6Ma0UWKHt1WrE1
+      6LchCGElAAAAAN-AbGKuRyaaUHI6pygWEczOK2te
+    });
+}); -->
+  </script>
+  <script>
+// (function() {
+//   emailjs.init('Ry_GFbXvGKZkNu7lu');
+// })();
+
+// emailjs.sendForm('service_ly8wwtb', 'template_guahqg5', '#contact-form')
+//   .then(function(response) {
+//      console.log('SUCCESS!', response.status, response.text);
+//   }, function(error) {
+//      console.log('FAILED...', error);
+//   });</script>
 </body>
 
 </html>
