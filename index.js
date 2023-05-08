@@ -1,33 +1,21 @@
 //Scroll Back To Top -START-
-let toTop = document.getElementById('scrl') //to top butonunun seçilmesi
-toTop.addEventListener('click', function () { //Butona click eventi
-    window.scrollTo({ //Tıklandığında yönlendirecek fonksiyon
-        top: 0, //Top konumu
-        left: 0, //Left konumu
-        behavior: 'smooth' //Hareket şekli
+let toTop = document.getElementById('scrl') //to top button
+toTop.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0, //Top poz
+        left: 0, //Left poz
+        behavior: 'smooth' //scroll type
     });
 })
 //Scroll Back To Top -END-
 
-//Copyright için tarih -START-
+//Copyright Date -START-
 let year = new Date();
-year.getFullYear(); //Yılın seçilmesi
-//Yılın footer'a yazdırılması
+year.getFullYear(); //year
+//render year
 document.getElementById("copy").innerHTML = `Tüm hakları saklıdır. &copy; ${year.getFullYear()} Seremköy v.0.5 <br><span class="cr"> </span><br><span class="dvlpr">Creators rnm💀 - fatih nayir🐦</span>`
-//Copyright için tarih -END-
+//Copyright Date -END-
 
-// 2a549216ecee4d72bf04a04531f22452  news api key
-let length = 100 //Api'dan gelen haber sayısının azaltılması için
-let index = 0; //for döngüsünün değişkeni
-
-// window.addEventListener("load", (event) => {
-//     haberCek();
-// });
-
-
-// function haberCek() {
-//     console.log("Fonksiyon içi length: ", length)
-//     console.log("Fonksiyon içi index: ", index)
 
 fetch("https://newsapi.org/v2/everything?q=edirne&apiKey=2a549216ecee4d72bf04a04531f22452") //Api'a istek atılan kısım
     .then((response) => response.json()) //Api'dan gelen json yanıtının dönüştürülmesi
