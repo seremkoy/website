@@ -87,6 +87,10 @@ table {
 
 /* Root -END- */
 
+html,body{
+    scroll-behavior: smooth;
+}
+
 /* HEADER AREA START */
 header {
     display: flex;
