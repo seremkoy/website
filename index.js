@@ -1,20 +1,20 @@
 //Scroll Back To Top -START-
-let toTop = document.getElementById('scrl') //to top butonunun seçilmesi
-toTop.addEventListener('click', function () { //Butona click eventi
-    window.scrollTo({ //Tıklandığında yönlendirecek fonksiyon
-        top: 0, //Top konumu
-        left: 0, //Left konumu
-        behavior: 'smooth' //Hareket şekli
+let toTop = document.getElementById('scrl') //to top button
+toTop.addEventListener('click', function () {
+    window.scrollTo({
+        top: 0, //Top poz
+        left: 0, //Left poz
+        behavior: 'smooth' //scroll type
     });
 })
 //Scroll Back To Top -END-
 
-//Copyright için tarih -START-
+//Copyright Date -START-
 let year = new Date();
-year.getFullYear(); //Yılın seçilmesi
-//Yılın footer'a yazdırılması
+year.getFullYear(); //year
+//render year
 document.getElementById("copy").innerHTML = `Tüm hakları saklıdır. &copy; ${year.getFullYear()} Seremköy v.0.5 <br><span class="cr"> </span><br><span class="dvlpr">Creators rnm💀 - fatih nayir🐦</span>`
-//Copyright için tarih -END-
+//Copyright Date -END-
 
 
 

@@ -134,12 +134,14 @@ header nav ul {
     display: flex;
     justify-content: center;
 }
-.contact{
+
+.contact {
     flex: 20%;
     text-align: center;
     cursor: pointer;
 }
-.contact a{
+
+.contact a {
     color: inherit;
 }
 
@@ -162,7 +164,8 @@ h3 {
     text-align: center;
 }
 
-nav ul li a, .contact {
+nav ul li a,
+.contact {
     text-decoration: none;
     color: var(--dark);
     position: relative;
@@ -197,9 +200,11 @@ nav ul li a, .contact {
     transition: transform ease-out 150ms;
     z-index: -1;
 }
+
 .navigation ul li a:hover {
     filter: invert(75%);
 }
+
 .navigation ul li a:hover::before {
     transform: scale(1, 1);
     box-shadow: rgba(114, 181, 121, 0.4) 0px 4px, rgba(165, 129, 103, 0.3) 0px 8px;
@@ -210,63 +215,6 @@ nav ul li a, .contact {
     transform: scale(1, 0.5);
     background-color: rgba(255, 255, 255, 1);
 }
-
-/* 
-.navigation ul li a::before {
-    transform: scale(0, 1);
-}
-
-.navigation ul li a::after {
-    transform: scale(1, 0);
-}
-
-nav ul li a:hover::before {
-    transition: transform ease-out 250ms;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    transform: scale(1, 0.7);
-}
-
-nav ul li a:hover::after {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    transform: scale(1, 0.7);
-} */
-
-/*
- nav ul li a:hover {
-    color: rgb(75, 108, 9);
-}
-
-nav ul li a::before,
-::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    color: var(--dark);
-    background-color: var(--dark);
-    transition: .5s;
-}
-
-nav ul li a::after {
-    left: 0;
-    bottom: -10px;
-}
-
-nav ul li a::before {
-    right: 0;
-    top: -10px;
-}
-
-nav ul li a:hover::before {
-    width: 100%;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-} */
-
 
 .buttons {
     gap: 30px;
@@ -436,44 +384,55 @@ main {
     padding: 3rem 0;
     gap: 2.5vw;
 }
-.duyuruCont{
+
+.duyuruCont {
     display: flex;
     flex-direction: row;
     padding: 2rem;
     gap: 2rem;
     width: 50%;
 }
-.duyuruIconCont1, .duyuruIconCont2, .duyuruIconCont3{
+
+.duyuruIconCont1,
+.duyuruIconCont2,
+.duyuruIconCont3 {
     font-size: 2rem;
     width: 200px;
     height: 150px;
     background-size: contain;
     background-repeat: no-repeat;
 }
-.duyuruIconCont1{
+
+.duyuruIconCont1 {
     background-image: url("images/muhtar4.png");
 }
-.duyuruIconCont2{
+
+.duyuruIconCont2 {
     background-image: url("images/yonetim8.png");
 }
-.duyuruIconCont3{
+
+.duyuruIconCont3 {
     background-image: url("images/developer5.png");
 }
+
 .duyuruTextCont {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     text-align: left;
 }
-.duyuruBaslik{
+
+.duyuruBaslik {
     padding-bottom: 0.5rem;
     font-weight: 700;
 }
-hr{
+
+hr {
     width: 95%;
     border: none;
     border-bottom: 1px solid black;
 }
+
 .contentH {
     font-size: clamp(20px, 2vw, 25px);
     font-weight: 500;
@@ -496,9 +455,11 @@ hr{
     -webkit-backdrop-filter: blur(25px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.contHeader{
+
+.contHeader {
     color: var(--primary);
 }
+
 .contCard {
     background: linear-gradient(180deg, #36363E 0%, #292930 100%);
     border: 1px solid #424245;
@@ -689,12 +650,3 @@ hr{
     background-color: #252525;
     color: var(--primary);
 }
-
-/* FOOTER AREA END */
-
-
-/* @media screen and (max-width: 1200px) {
-    .navigation{
-        display: none;
-    }
-      } */
