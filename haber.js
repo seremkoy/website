@@ -17,7 +17,6 @@ async function mynetRSS() {
         const data = parser.parseFromString(xmlData, "text/xml")
         const items = Array.from(data.querySelectorAll("item"))
         const filteredItems = items.slice(sliceStart, sliceEnd)
-        console.log(items.length)
 
         filteredItems.forEach(item => {
             const title = item.querySelector("title").textContent;

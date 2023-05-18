@@ -177,13 +177,15 @@ h3 {
     text-align: center;
 }
 
+.nav{
+    padding: 0.5vw;
+}
 .nav,
 .contact {
     text-decoration: none;
     color: var(--dark);
     position: relative;
     font-size: clamp(0.75rem, 2vw, 1.2rem);
-    padding: 0.5vw;
 }
 
 .navigation ul li a:hover {
@@ -265,64 +267,6 @@ h3 {
     }
 }
 
-
-/* 
-.navigation ul li a::before {
-    transform: scale(0, 1);
-}
-
-.navigation ul li a::after {
-    transform: scale(1, 0);
-}
-
-.nav:hover::before {
-    transition: transform ease-out 250ms;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    transform: scale(1, 0.7);
-}
-
-.nav:hover::after {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    transform: scale(1, 0.7);
-} */
-
-/*
- .nav:hover {
-    color: rgb(75, 108, 9);
-}
-
-.nav::before,
-::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    color: var(--dark);
-    background-color: var(--dark);
-    transition: .5s;
-}
-
-.nav::after {
-    left: 0;
-    bottom: -10px;
-}
-
-.nav::before {
-    right: 0;
-    top: -10px;
-}
-
-.nav:hover::before {
-    width: 100%;
-}
-
-.nav:hover::after {
-    width: 100%;
-} */
-
-
 .buttons {
     gap: 30px;
     display: flex;
@@ -338,6 +282,10 @@ h3 {
 
 .buttons a i:hover {
     transform: scale(1.09);
+}
+
+.weather-cont{
+    flex: 20%;
 }
 
 /* HEADER AREA END */
@@ -799,10 +747,10 @@ main {
     width: 100%;
 }
 
-.weather-cont {
+/* .weather-cont {
     flex: 100%;
     width: 100%;
-}
+} */
 
 .weather {
     width: 100%;
