@@ -34,28 +34,20 @@
             <li><a href="yonetim.html" class="nav">Yönetim</a></li>
           </ul>
         </div>
-        <div class="contact"><a href="mailto:seremkoy@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a></button>
+        <div id="weather-cont" class="desk-weather">
         </div>
-        <!-- <input id="toggle" type="checkbox">
-          <label for="toggle" class="mobile-toggle">
-            <div class="menu-button"></div>
-          </label>
-          <ul class="mobile-nav">
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="duyurular.html">Duyurular</a></li>
-            <li><a href="haberler.html">Haberler</a></li>
-            <li><a href="galeri.html">Galeri</a></li>
-            <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="yonetim.html">Yönetim</a></li>
-          </ul> -->
         <div class="mobile-menu">
-          <input id="hamburger-input" type="checkbox">
+          <!-- <input id="hamburger-input" type="checkbox">
           <label id="hamburger" for="hamburger-input">
             <span class="line1"></span>
             <span class="line2"></span>
             <span class="line3"></span>
-          </label>
-          <div class="menu-list">
+          </label> -->
+          <button id="mobile-toggle" style="background: transparent;" onclick="MobileNav()">
+            <i class="fa-solid fa-ellipsis" id="mTog"></i>
+          </button>
+          <div class="menu-list" id="mobile-menu">
+            <div id="weather-cont" class="mobile-weather"></div>
             <ul class="menu-list-ul">
               <li class="menu-list-li"><a href="index.html">Anasayfa</a></li>
               <li class="menu-list-li"><a href="duyurular.html">Duyurular</a></li>
@@ -64,53 +56,61 @@
               <li class="menu-list-li"><a href="hakkimizda.html">Hakkımızda</a></li>
               <li class="menu-list-li"><a href="yonetim.html">Yönetim</a></li>
             </ul>
+            <ul class="mobile-social">
+              <li><a class="face" href="https://www.facebook.com/seremkoy22/?locale=tr_TR" target="_blank"><i
+                class="fab fa-facebook fa-2x"></i></a></li>
+          <li><a class="insta" href="https://www.instagram.com/seremkoy22/" target="_blank"><i
+                class="fab fa-instagram fa-2x"></i></a></li>
+          <li><a class="youtube" href="https://www.youtube.com/@seremkoy2265" target="_blank"><i
+                class="fab fa-youtube fa-2x"></i></a>
+          </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
-<section class="content-d">
-    <div class="title-nav">
-      <ul>
-        <li>
-          <a href="index.html">Ana Sayfa </a>
-        </li>
-        
-        <li>
-          Yönetim
-        </li>
-      </ul>
-    </div>
-    <div class="duyuru-cont-main">
-      <div class="duyuruCont">
-        <div class="duyuruIconCont1"></div>
-        <div class="duyuruTextCont">
-          <h1 class="duyuruBaslik">MUHTAR</h1>
-          <p class="duyuruText">&#x2022; Hüseyin Aksoy</p>
+    <section class="content-d">
+      <div class="title-nav">
+        <ul>
+          <li>
+            <a href="index.html">Ana Sayfa </a>
+          </li>
+
+          <li>
+            Yönetim
+          </li>
+        </ul>
+      </div>
+      <div class="duyuru-cont-main">
+        <div class="duyuruCont">
+          <div class="duyuruIconCont1"></div>
+          <div class="duyuruTextCont">
+            <h1 class="duyuruBaslik">MUHTAR</h1>
+            <p class="duyuruText">&#x2022; Hüseyin Aksoy</p>
+          </div>
+        </div>
+        <hr>
+        <div class="duyuruCont">
+          <div class="duyuruIconCont2"></div>
+          <div class="duyuruTextCont">
+            <h1 class="duyuruBaslik">YÖNETİM</h1>
+            <p class="duyuruText">&#x2022; Fevzi Öz</p>
+            <p class="duyuruText">&#x2022; Süleyman</p>
+            <p class="duyuruText">&#x2022; Nahit Evci</p>
+            <p class="duyuruText">&#x2022; Tuncay Aydın</p>
+          </div>
+        </div>
+        <hr>
+        <div class="duyuruCont">
+          <div class="duyuruIconCont3"></div>
+          <div class="duyuruTextCont">
+            <h1 class="duyuruBaslik">GELİŞTİRİCİ</h1>
+            <p class="duyuruText">Seremköy WebSitesi <a href="https://fatih-nayir.netlify.app/" target="_blank">Fatih Nayir</a> ve <a href="https://macidko.netlify.app/" target="_blank">Eren Macit</a> Tarafından Geliştirilmiştir</p>
+            
+          </div>
         </div>
       </div>
-      <hr>
-      <div class="duyuruCont">
-        <div class="duyuruIconCont2"></div>
-        <div class="duyuruTextCont">
-          <h1 class="duyuruBaslik">YÖNETİM</h1>
-          <p class="duyuruText">&#x2022; Fevzi Öz</p>
-          <p class="duyuruText">&#x2022; Çaka Sülman</p>
-          <p class="duyuruText">&#x2022;  Nahit Evci</p>
-          <p class="duyuruText">&#x2022;  Tuncay Aydın</p>
-        </div>
-      </div>
-      <hr>
-      <div class="duyuruCont">
-        <div class="duyuruIconCont3"></div>
-        <div class="duyuruTextCont">
-          <h1 class="duyuruBaslik">GELİŞTİRİCİ</h1>
-          <p class="duyuruText">Bu website, macidko ve bablak tarafından Seremköy için geliştirilmiştir.</p>
-          <p class="duyuruText">&#x2022; macidko a.k.a natural born zurzak</p>
-          <p class="duyuruText">&#x2022; bablak el-kuşinsan</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
     <footer>
       <div class="footer-main">
         <div class="social-links">
@@ -126,9 +126,11 @@
         </div>
         <div class="bottom-text">
           <ul class="text-flex">
+            <li><a href="index.html">Anasayfa</a></li>
             <li><a href="duyurular.html">Duyurular</a></li>
-            <li><a href="">Cemiyetler</a></li>
-            <li><a href="">Hakkımızda</a></li>
+            <li><a href="haberler.html">Haberler</a></li>
+            <li><a href="piyasalar.html">Piyasalar</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
             <li><a href="yonetim.html">Yönetim</a></li>
           </ul>
         </div>

@@ -12,11 +12,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
   <a href="javascript:void(0)" id="scrl"><i class="fa-solid fa-arrow-up"></i></a>
-  <div class="container-d">
+  <div class="container-d-i">
     <header>
       <nav>
         <div class="logo">
@@ -34,20 +35,16 @@
             <li><a href="yonetim.html" class="nav">Yönetim</a></li>
           </ul>
         </div>
-        <div id="weather-cont" class="desk-weather">
+        <div class="contact"><a href="iletisim.html"><i class="fa-solid fa-envelope fa-xl"></i></a></button>
         </div>
         <div class="mobile-menu">
-          <!-- <input id="hamburger-input" type="checkbox">
+          <input id="hamburger-input" type="checkbox">
           <label id="hamburger" for="hamburger-input">
             <span class="line1"></span>
             <span class="line2"></span>
             <span class="line3"></span>
-          </label> -->
-          <button id="mobile-toggle" style="background: transparent;" onclick="MobileNav()">
-            <i class="fa-solid fa-ellipsis" id="mTog"></i>
-          </button>
-          <div class="menu-list" id="mobile-menu">
-            <div id="weather-cont" class="mobile-weather"></div>
+          </label>
+          <div class="menu-list">
             <ul class="menu-list-ul">
               <li class="menu-list-li"><a href="index.html">Anasayfa</a></li>
               <li class="menu-list-li"><a href="duyurular.html">Duyurular</a></li>
@@ -55,15 +52,6 @@
               <li class="menu-list-li"><a href="piyasalar.html">Piyasalar</a></li>
               <li class="menu-list-li"><a href="hakkimizda.html">Hakkımızda</a></li>
               <li class="menu-list-li"><a href="yonetim.html">Yönetim</a></li>
-            </ul>
-            <ul class="mobile-social">
-              <li><a class="face" href="https://www.facebook.com/seremkoy22/?locale=tr_TR" target="_blank"><i
-                class="fab fa-facebook fa-2x"></i></a></li>
-          <li><a class="insta" href="https://www.instagram.com/seremkoy22/" target="_blank"><i
-                class="fab fa-instagram fa-2x"></i></a></li>
-          <li><a class="youtube" href="https://www.youtube.com/@seremkoy2265" target="_blank"><i
-                class="fab fa-youtube fa-2x"></i></a>
-          </li>
             </ul>
           </div>
         </div>
@@ -77,15 +65,57 @@
           </li>
 
           <li>
-            Haberler
+            İletişim
           </li>
         </ul>
       </div>
-      <div id="contCardMain">
-      </div>
-      <div class="newsNav">
-        <span id="forward"><i class="fa-solid fa-angle-left"></i> Geri</span>
-        <span id="next">İleri <i class="fa-solid fa-angle-right"></i></span>
+      <div class="form-cont-main">
+
+        <div class="contact-info">
+          <p>Köyde gerçekleşen olaylar hakkında bizi bilgilendirebilir, sitedeki hataları bildirebilir ya da öneride
+            bulunabilirsiniz. </p>
+        </div>
+        <form id="form">
+          <div class="form-main">
+            <label for="from_name">İsminiz;</label>
+            <div class="name-cont">
+              <input type="text" name="from_name" id="from_name">
+            </div>
+            <label for="message">Mesajınız;</label>
+            <div class="message-cont">
+              <textarea type="text" name="message" id="message" rows="10" cols="100"></textarea>
+              <input type="submit" id="button" value="Send Email">
+            </div>
+          </div>
+        </form>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+          emailjs.init('Ry_GFbXvGKZkNu7lu')
+        </script>
+        <script>
+
+          const btn = document.getElementById('button');
+
+          document.getElementById('form')
+            .addEventListener('submit', function (event) {
+              event.preventDefault();
+
+              btn.value = 'Sending...';
+
+              const serviceID = 'default_service';
+              const templateID = 'template_guahqg5';
+
+              emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                  btn.value = 'Send Email';
+                  alert('Mesajınız gönderildi!');
+                }, (err) => {
+                  btn.value = 'Send Email';
+                  alert(JSON.stringify(err));
+                });
+            });</script>
       </div>
     </section>
     <footer>
@@ -131,8 +161,6 @@
       <p id="copy"></p>
     </div>
   </div>
-  <script src="index.js"></script>
-  <script src="haber.js"></script>
 </body>
 
 </html>
