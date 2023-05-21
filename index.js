@@ -19,25 +19,24 @@ function MobileNav(){
   document.addEventListener('click', function(e) {
     if (!Mtoggle.contains(e.target) && e.target != mTog ) {
         Mtoggle.style.transform = "translateX(1000px)";
+        Mtoggle.style.display = 'none'
         mTog.classList.add('fa-ellipsis');
         mTog.classList.remove('fa-circle-xmark');
-        // togBtn.style.left = "5%";
+
     }
 });
-
   if (Mtoggle.style.transform === "translateX(0px)" ){
       Mtoggle.style.transform = "translateX(1000px)";
       mTog.classList.add('fa-ellipsis');
+      Mtoggle.style.display = 'none'
       mTog.classList.remove('fa-circle-xmark');
-      // togBtn.style.left = "5%";
       
 
   } else{
       Mtoggle.style.transform = "translateX(0px)"     
       mTog.classList.add('fa-circle-xmark');
+      Mtoggle.style.display = 'flex'
       mTog.classList.remove('fa-ellipsis');
-      togBtn.style.transition = "500ms";
-      // togBtn.style.left = "37%";
   }   
 }
 /*MOBILE MENU AREA END*/ 

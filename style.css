@@ -1141,12 +1141,15 @@ body::-webkit-scrollbar-thumb {
   border-radius: 25px;
   position: absolute;
 }
+#mobile-toggle{
+  display: none;
+}
 #mobile-toggle #mTog{
   color: var(--primary);
   font-size: 2em;
 }
 .menu-list {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 70%;
   height: 95vh;
@@ -1158,7 +1161,7 @@ body::-webkit-scrollbar-thumb {
   color: var(--primary);
   padding: 1rem;
   transform: translateX(1000px);
-  transition: 350ms all;
+  transition: all 350ms ease;
   /* animation: identifier-reverse 250ms ease forwards; */
 }
 .line1 {
@@ -1226,7 +1229,6 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   padding: 0.5rem;
   border-radius: 8%;
-  animation: mobile-button-border-reverse 250ms ease forwards;
 }
 .mobile-social{
   justify-content: space-around;
@@ -1349,6 +1351,9 @@ body::-webkit-scrollbar-thumb {
   }
   #hamburger span{
     background-color: var(--primary);
+  }
+  #mobile-toggle{
+    display: block;
   }
   #svg {
     width: 90%;
