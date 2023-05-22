@@ -1,5 +1,13 @@
 "use-strict"
 
+function scroll(){
+    window.scrollTo({ //Tıklandığında yönlendirecek fonksiyon
+        top: 0, //Top konumu
+        left: 0, //Left konumu
+        behavior: 'smooth' //Hareket şekli
+      });
+}
+
 const RSS_URL = "https://www.mynet.com/haber/rss/kategori/guncel/";
 // // const PROXY_URL = "https://api.allorigins.win/raw?url=" + encodeURIComponent(RSS_URL);
 const newsAddDiv = document.getElementById("contCardMain") //Haberlerin ekleneceği div
@@ -56,6 +64,7 @@ nextNews.addEventListener("click", () => {
     sliceStart = sliceStart + 12
     sliceEnd = sliceEnd + 12
     mynetRSS(count)
+    scroll()
 })
 
 const forwardNews = document.getElementById("forward")
@@ -65,6 +74,7 @@ forwardNews.addEventListener("click", () => {
         sliceStart = sliceStart - 12
         sliceEnd = sliceEnd - 12
         mynetRSS(count)
+        scroll()
     }
 })
 

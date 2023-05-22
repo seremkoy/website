@@ -53,10 +53,6 @@ async function weatherApi() {
 
     if (response.ok) {
       // Yanıt başarılı
-
-      // Alınan veriler konsola yazdırılır
-      console.log(data);
-
       //Alınan veriler değişkene atanır
       const weatherMain = data.weather[0].main
       const weatherIcon = data.weather[0].icon
@@ -87,22 +83,42 @@ async function weatherApi() {
 
 weatherApi();
 
-
-
 //Copyright için tarih -START-
 let year = new Date();
 year.getFullYear(); //Yılın seçilmesi
 //Yılın footer'a yazdırılması
-document.getElementById("copy").innerHTML = `Tüm hakları saklıdır. &copy; ${year.getFullYear()} Seremköy v. 1 <span class="dvlpr">Developed By <a href="https://macidko.netlify.app/" target="_blank">Eren</a> & <a href="https://fatih-nayir.netlify.app/" target="_blank">Fatih</a></span>`
+document.getElementById("copy").innerHTML = `Tüm hakları saklıdır. &copy; ${year.getFullYear()} Seremköy v. 1 <span class="dvlpr">Created By <a href="https://www.instagram.com/develoopwd/" target="_blank">DeveloopWD</a></span>`
 //Copyright için tarih -END-
 
+//POP UP SECTION
+const popUp = document.querySelector(".pop-up");
+const closeButton = document.querySelector("#close-pop");
+const progressBar = document.getElementById("progress-bar");
+function openPopUp() {
+  popUp.classList.add("show");
+  progressBar.style.width = "100%";
+  setTimeout(closePopUp, 20000); 
+  startProgressBar();
+}
 
-// const mobileNav = document.querySelector(".menu-list")
-// const hiddenLength = document.querySelectorAll(".hidden").length
+function closePopUp() {
+  popUp.classList.remove("show");
+}
+function startProgressBar() {
+  let width = 100;
+  const interval = setInterval(frame, 195); // Her 100 milisaniyede bir frame() fonksiyonunu çağır
 
+  function frame() {
+    if (width <= 0) {
+      clearInterval(interval); // İlerleme çubuğu tamamen azaldığında interval'i temizle
+    } else {
+      width--;
+      progressBar.style.width = width + "%"; // İlerleme çubuğunun genişliğini güncelle
+    }
+  }
+}
+closeButton.addEventListener("click", closePopUp);
 
+window.onload(openPopUp())
 
-//EMAILJS BEGIN
-
-
-//EMAILJS END
+// POP UP SECTION END
