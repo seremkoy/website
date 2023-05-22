@@ -53,10 +53,6 @@ async function weatherApi() {
 
     if (response.ok) {
       // Yanıt başarılı
-
-      // Alınan veriler konsola yazdırılır
-      console.log(data);
-
       //Alınan veriler değişkene atanır
       const weatherMain = data.weather[0].main
       const weatherIcon = data.weather[0].icon
@@ -87,22 +83,9 @@ async function weatherApi() {
 
 weatherApi();
 
-
-
 //Copyright için tarih -START-
 let year = new Date();
 year.getFullYear(); //Yılın seçilmesi
 //Yılın footer'a yazdırılması
 document.getElementById("copy").innerHTML = `Tüm hakları saklıdır. &copy; ${year.getFullYear()} Seremköy v. 1 <span class="dvlpr">Developed By <a href="https://macidko.netlify.app/" target="_blank">Eren</a> & <a href="https://fatih-nayir.netlify.app/" target="_blank">Fatih</a></span>`
 //Copyright için tarih -END-
-
-
-// const mobileNav = document.querySelector(".menu-list")
-// const hiddenLength = document.querySelectorAll(".hidden").length
-
-
-
-//EMAILJS BEGIN
-
-
-//EMAILJS END

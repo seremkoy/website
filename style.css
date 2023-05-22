@@ -254,7 +254,7 @@ h3 {
   background-color: hsl(0 0 100% / 75%);
 }
 @keyframes navButtonHover {
-  0 {
+  0% {
     transform: scale(0, 0.3);
   }
   20% {
@@ -367,7 +367,7 @@ main {
   width: 45vw;
 }
 @keyframes slide {
-  0 {
+  0% {
     transform: translateX(1000px);
   }
   100% {
@@ -489,7 +489,7 @@ main {
   animation: deneme 1s linear infinite;
 }
 @keyframes deneme {
-  0 {
+  0% {
     background-position: -150px;
   }
   100% {
@@ -508,7 +508,7 @@ main {
   border-radius: 50%;
 }
 @keyframes border {
-  0 {
+  0% {
     border: 3px solid #7ef470;
   }
   20% {
@@ -626,10 +626,10 @@ main {
   font-size: clamp(12px, 1.8vw, 18px);
   font-weight: 100;
 }
-.duyuru-cont-main {
+#duyuru-cont-main {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
@@ -785,11 +785,19 @@ main {
   width: 50%;
 } */
 .duyuruCont1 {
+  width: 100%;
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   padding: 2rem;
   gap: 2rem;
 }
+
+.duyuruIconCont img {
+  max-width: 350px;
+  max-height: 350px;
+}
+
 .duyuruIconCont1,
 .duyuruIconCont2,
 .duyuruIconCont3 {
@@ -809,12 +817,14 @@ main {
   background-image: url("images/developer5.png");
 }
 .duyuruTextCont {
+  width: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: space-evenly;
   gap: 1rem;
   text-align: left;
+  padding-left: 5rem;
 }
 .about img{
   width: 650px;
@@ -1322,6 +1332,11 @@ body::-webkit-scrollbar-thumb {
   .content {
     height: auto;
   }
+  .duyuruIconCont img {
+    max-width: 300px;
+  }
+  
+
   .duyuruIconCont1,
   .duyuruIconCont2,
   .duyuruIconCont3 {
@@ -1406,6 +1421,7 @@ body::-webkit-scrollbar-thumb {
   }
   .duyuruTextCont {
     max-width: 70%;
+    padding-left: 0;
   }
   .duyuruCont1 {
     flex-direction: column;
