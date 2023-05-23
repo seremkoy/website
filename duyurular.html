@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Seremköy Websitesi, Düğün, Cemiyet, Mevlüt Duyuruları Köyümüzün Sitesinden Takip Edebilirsiniz">
+  <meta name="keywords" content="Seremköy, Seremköy Site, Serem, Seremköy Website,Seremköy Düğün, Seremköy Duyurular">
+  <title>Seremköy Websitesi | Duyurular</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./public_html/images/favicon1.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+  <a href="javascript:void(0)" id="scrl"><i class="fa-solid fa-arrow-up"></i></a>
+  <div class="container-d">
+    <header>
+       <nav>
+        <div class="logo">
+          <a href="index.html">
+            <h4>Seremköy</h4>
+          </a>
+        </div>
+        <div class="navigation">
+          <ul>
+            <li><a href="index.html" class="nav">Ana Sayfa</a></li>
+            <li><a href="duyurular.html" class="nav">Duyurular</a></li>
+            <li><a href="haberler.html" class="nav">Haberler</a></li>
+            <li><a href="piyasalar.html" class="nav">Piyasalar</a></li>
+            <li><a href="hakkimizda.html" class="nav">Hakkımızda</a></li>
+          </ul>
+        </div>
+        <div id="weather-cont" class="desk-weather">
+        </div>
+        <div class="mobile-menu">
+          <button id="mobile-toggle" style="background: transparent;" onclick="MobileNav()">
+            <i class="fa-solid fa-ellipsis" id="mTog"></i>
+          </button>
+          <div class="menu-list" id="mobile-menu">
+            <div id="weather-cont" class="mobile-weather"></div>
+            <ul class="menu-list-ul">
+              <li class="menu-list-li"><a href="index.html">Anasayfa</a></li>
+              <li class="menu-list-li"><a href="duyurular.html">Duyurular</a></li>
+              <li class="menu-list-li"><a href="haberler.html">Haberler</a></li>
+              <li class="menu-list-li"><a href="piyasalar.html">Piyasalar</a></li>
+              <li class="menu-list-li"><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+            <ul class="mobile-social">
+              <li><a class="face" href="https://www.facebook.com/seremkoy22/?locale=tr_TR" target="_blank"><i
+                class="fab fa-facebook fa-2x"></i></a></li>
+          <li><a class="insta" href="https://www.instagram.com/seremkoy22/" target="_blank"><i
+                class="fab fa-instagram fa-2x"></i></a></li>
+          <li><a class="youtube" href="https://www.youtube.com/@seremkoy2265" target="_blank"><i
+                class="fab fa-youtube fa-2x"></i></a>
+          </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="content-d">
+      <div class="title-nav">
+        <ul>
+          <li>
+            <a href="index.html">Ana Sayfa</a>
+          </li>
+  
+          <li>
+            Duyurular
+          </li>
+        </ul>
+      </div>
+      <div id="duyuru-cont-main">
+      
+      </div>
+    </section>
+    <footer>
+      <div class="footer-main">
+        <div class="social-links">
+          <ul>
+            <li><a class="face" href="https://www.facebook.com/seremkoy22/?locale=tr_TR" target="_blank"><i
+                  class="fab fa-facebook fa-2x"></i>Facebook</a></li>
+            <li><a class="insta" href="https://www.instagram.com/seremkoy22/" target="_blank"><i
+                  class="fab fa-instagram fa-2x"></i>Instagram</a></li>
+            <li><a class="youtube" href="https://www.youtube.com/@seremkoy2265" target="_blank"><i
+                  class="fab fa-youtube fa-2x"></i>YouTube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-text">
+          <ul class="text-flex">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="duyurular.html">Duyurular</a></li>
+            <li><a href="haberler.html">Haberler</a></li>
+            <li><a href="piyasalar.html">Piyasalar</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="yonetim.html">Yönetim</a></li>
+          </ul>
+        </div>
+        <div class="location">
+          <a href="https://goo.gl/maps/4EdWeExA9He6yqnW7" target="_blank">
+            <h1>
+              <i class="fa-solid fa-map-location-dot"></i> Haritayı Aç
+            </h1>
+          </a>
+          <a href="https://www.google.com/maps/dir//Serem,+22680+Serem%2FMeri%C3%A7%2FEdirne/@41.3140175,26.5145435,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14b304098734c259:0x9f7345ae5e0e499c!2m2!1d26.5158!2d41.3149"
+            target="_blank">
+            <h1>
+              <i class="fa-solid fa-map-pin"></i> Yol Tarifi Al
+            </h1>
+          </a>
+        </div>
+      </div>
+
+    </footer>
+    <div class="copyright">
+      <p id="copy"></p>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <script src="duyurular.js"></script>
+</body>
+
+</html>

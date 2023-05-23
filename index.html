@@ -5,194 +5,222 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seremköy</title>
+  <meta name="description"
+    content="Seremköy Websitesi, Seremköy Edirne'nin Meriç İlçesine Bağlı Sınır Köyüdür, Düğün, Cemiyet, Mevlüt Duyuruları, Ülke Geneli Haberler Piyasa ve Borsaları Köyümüzün Sitesinden Takip Edebilirsiniz">
+  <meta name="keywords" content="Seremköy, Seremköy Site, Serem, Seremköy Website,Seremköy Düğün, Seremköy Haberleri">
+  <link rel="shortcut icon" href="./public_html/images/favicon1.ico" type="image/x-icon">
+  <title>Seremköy Websitesi | Ana Sayfa</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div class="pop-up">
+    <h1>Seremköy'e Hoş Geldiniz!</h1>
+    <h3 id="pop-header">Bilgilendirme</h3>
+    <p id="pop-text">
+      Sitenin Domain ve Hosting Ücretleri Köy Muhtarlığı Tarafından Karşılanmadığı İçin Siteyi Ücretsiz Platformdan
+      Yayınlıyoruz. Bu Yüzden "Site Güvenli Değil" Uyarısı Alabilirsiniz. Herhangi Bir Bilgi İstenmediği İçin Bu Uyarıyı
+      Dİkkate Almamanızı Öneririz. <br> İlginiz İçin Teşekkürler!</p>
+    <span id="close-pop"><i class="fa-solid fa-xmark"></i></span>
+    <div id="progress-bar"></div>
+  </div>
   <a href="javascript:void(0)" id="scrl"><i class="fa-solid fa-arrow-up"></i></a>
   <div class="container">
     <header>
       <nav>
         <div class="logo">
           <a href="index.html">
-            <!-- <img src="images/logo.png" alt="Logo" width="50px" /> -->
             <h4>Seremköy</h4>
           </a>
         </div>
         <div class="navigation">
           <ul>
-            <li class="active"><a href="">Ana Sayfa</a></li>
-            <li><a href="">Hakkımızda</a></li>
-            <li><a href="">Cemiyetler</a></li>
-            <li><a href="">Foto Galeri</a></li>
+            <li><a href="index.html" class="nav">Ana Sayfa</a></li>
+            <li><a href="duyurular.html" class="nav">Duyurular</a></li>
+            <li><a href="haberler.html" class="nav">Haberler</a></li>
+            <li><a href="piyasalar.html" class="nav">Piyasalar</a></li>
+            <li><a href="hakkimizda.html" class="nav">Hakkımızda</a></li>
           </ul>
         </div>
-        <div class="buttons">
-          <a href="" class="btn">İletişim</a>
+        <div id="weather-cont" class="desk-weather">
+        </div>
+        <div class="mobile-menu">
+          <button id="mobile-toggle" style="background: transparent;" onclick="MobileNav()">
+            <i class="fa-solid fa-ellipsis" id="mTog"></i>
+          </button>
+          <div class="menu-list" id="mobile-menu">
+            <div id="weather-cont" class="mobile-weather"></div>
+            <ul class="menu-list-ul">
+              <li class="menu-list-li"><a href="index.html">Anasayfa</a></li>
+              <li class="menu-list-li"><a href="duyurular.html">Duyurular</a></li>
+              <li class="menu-list-li"><a href="haberler.html">Haberler</a></li>
+              <li class="menu-list-li"><a href="piyasalar.html">Piyasalar</a></li>
+              <li class="menu-list-li"><a href="hakkimizda.html">Hakkımızda</a></li>
+            </ul>
+            <ul class="mobile-social">
+              <li><a class="face" href="https://www.facebook.com/seremkoy22/?locale=tr_TR" target="_blank"><i
+                    class="fab fa-facebook fa-2x"></i></a></li>
+              <li><a class="insta" href="https://www.instagram.com/seremkoy22/" target="_blank"><i
+                    class="fab fa-instagram fa-2x"></i></a></li>
+              <li><a class="youtube" href="https://www.youtube.com/@seremkoy2265" target="_blank"><i
+                    class="fab fa-youtube fa-2x"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <main>
       <section class="home-area">
         <div class="home-area-l">
+          <svg viewBox="0 0 200 200" id="svg" xmlns="http://www.w3.org/2000/svg">
+            <path id="path" fill="#C2BBA6"
+              d="M42.4,-71.6C54.1,-66.6,62.1,-53.6,62.7,-40.3C63.3,-27,56.4,-13.5,55.9,-0.3C55.3,12.9,61.1,25.7,59.9,38C58.7,50.2,50.5,61.7,39.4,67.3C28.2,72.8,14.1,72.3,2.7,67.6C-8.6,62.9,-17.3,53.9,-30.6,49.6C-43.9,45.3,-61.9,45.7,-67.3,38.2C-72.7,30.7,-65.5,15.4,-62.1,2C-58.6,-11.4,-59,-22.8,-57.1,-36.4C-55.2,-50,-51.1,-65.7,-41.2,-71.7C-31.3,-77.6,-15.7,-73.9,-0.2,-73.6C15.3,-73.3,30.7,-76.5,42.4,-71.6Z"
+              transform="translate(100 100)" />
+          </svg>
           <div class="text-area">
-            <h1>Hoş Geldiniz!</h1>
+            <h1>Seremköy'e <br> Hoş Geldiniz!</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-              aspernatur praesentium quo! Reiciendis, iure atque.
+              Cemiyetler,Mevlüt ve Cenaze Duyuruları Gibi Anlık Haberleri Sitemizden Takip Edebilirsiniz.
             </p>
           </div>
         </div>
         <div class="home-area-r">
-          <img src="images/home-img.png" alt="" />
+          <img src="./public_html/images/farmer.png" alt="" />
         </div>
       </section>
     </main>
     <div class="content">
       <div class="contHeader">
-        <h1 class="contentH">Header</h1>
-        <p class="contentP">Lorem ipsum dolor sit amet consectetur.</p>
+        <h1 class="contentH">Hızlı Gezinti Kartları</h1>
+        <p class="contentP"></p>
       </div>
       <div class="contCardMain">
-          <div class="contCard">
-            <a href="" class="ani-b"><span><i class="fa-sharp fa-solid fa-house icon"></i></span></a>
-            <a href="">
-              <h1 class="contCardH">Anasayfa</h1>
-            </a>
-            <a href="">
+        <div class="contCard">
+          <a href="duyurular.html" class="contCardHref">
+            <div class="cardIcon">
+              <i class="fa-solid fa-microphone fa-xl icon2"></i>
+            </div>
+            <div>
+              <h1 class="contCardH2">Duyurular</h1>
               <p class="contCardP">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                veritatis nemo veniam, totam consequuntur
+                Köyümüzdeki önemli duyuruları burada takip edin.
               </p>
-             </a>
-            
-          </div>
-        <div id="contCard2" class="contCard">
-            <a href="" class="ani-b"><span><i class="fa-solid fa-pen icon"></i></span></a>
-            <a href="">
-              <h1 class="contCardH">Duyurular</h1>
-            </a>
-            <a href="">
-              <p class="contCardP">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                veritatis nemo veniam, totam consequuntur
-              </p>
-            </a>
-        </div>
-        <div id="contCard3" class="contCard">
-          <a href="#" class="ani-b"><span><i class="fa-solid fa-landmark icon"></i></span></a>
-            <a href="">
-              <h1 class="contCardH">Hakkımızda</h1>
-            </a>
-            <a href="">
-              <p class="contCardP">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                veritatis nemo veniam, totam consequuntur
-              </p>
-            </a>
-        </div>
-        <div id="contCard4" class="contCard">
-          <a href="" class="ani-b"><span><i class="fa-solid fa-camera-retro icon"></i></span></a>
-          <a href="">
-            <h1 class="contCardH">Galeri</h1>
-          </a>
-          <a href="">
-            <p class="contCardP">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-              veritatis nemo veniam, totam consequuntur
-            </p>
+            </div>
           </a>
         </div>
-        <div id="contCard5" class="contCard">
-            <a href="" class="ani-b"><span><i class="fa-solid fa-user-tie icon"></i></span></a>
-            <a href="">
-              <h1 class="contCardH">Yönetim</h1>
-            </a>
-            <a href="">
+        <div class="contCard">
+          <a href="haberler.html">
+            <div class="cardIcon">
+              <i class="fa-solid fa-radio fa-xl icon2"></i>
+            </div>
+            <div>
+              <h1 class="contCardH2">Haberler</h1>
               <p class="contCardP">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                veritatis nemo veniam, totam consequuntur
+                Ülke gündeminden son haberler.
               </p>
-            </a>
+            </div>
+          </a>
         </div>
-        <div id="contCard6" class="contCard">
-            <a href="" class="ani-b"><span><i class="fa-solid fa-phone-volume icon"></i></span></a>
-            <a href="">
-              <h1 class="contCardH">İletişim</h1>
-            </a>
-            <a href="">
+        <div class="contCard">
+          <a href="piyasalar.html">
+            <div class="cardIcon">
+              <i class="fa-solid fa-chart-line fa-xl icon2"></i>
+            </div>
+            <div>
+              <h1 class="contCardH2">Piyasalar</h1>
               <p class="contCardP">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                veritatis nemo veniam, totam consequuntur
+                Döviz, borsa, kripto para verilerine göz atabilirsiniz.
               </p>
-            </a>
+            </div>
+          </a>
+        </div>
+        <div class="contCard">
+          <a href="yonetim.html">
+            <div class="cardIcon">
+              <i class="fa-solid fa-users fa-xl icon2"></i>
+            </div>
+            <div>
+              <h1 class="contCardH2">Hakkımızda</h1>
+              <p class="contCardP">
+                Köyümüz Hakkında Genel Bilgi ve Köyümüzün Tarihçesi
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="footer-parts">
-        <div class="footer-info">
-          <div class="f-logo logo">
-            <a href="index.html" class="footer-l">
-              <img src="images/logo.png" alt="Footer Logo">
-              <h4>Seremköy</h4>
-            </a>
-          </div>
-          <p class="info-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex magni nihil. Minima ipsam delectus
-            culpa numquam aut possimus ad commodi explicabo?
-          </p>
+    <div class="video-area">
+      <h3>Köyümüzün Düğünlerinden Videolar</h3>
+      <div class="videos">
 
-          <ul class="social-links">
-            <li><a href="https://www.facebook.com/seremkoy22/?locale=tr_TR" target="_blank"><i
-                  class="fab fa-facebook fa-2x"></i></a></li>
-            <li><a href="https://www.instagram.com/seremkoy22/" target="_blank"><i
-                  class="fab fa-instagram fa-2x"></i></a></li>
-            <li><a href="https://www.youtube.com/@seremkoy2265" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gZ72jgbANnE" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ixRHwOrGc1E" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GbCyE3VMOS0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/E6d7jDwYmMY" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-main">
+        <div class="social-links">
+          <ul>
+            <li><a class="face" href="https://www.facebook.com/seremkoy22/?locale=tr_TR" target="_blank"><i
+                  class="fab fa-facebook fa-2x"></i>Facebook</a></li>
+            <li><a class="insta" href="https://www.instagram.com/seremkoy22/" target="_blank"><i
+                  class="fab fa-instagram fa-2x"></i>Instagram</a></li>
+            <li><a class="youtube" href="https://www.youtube.com/@seremkoy2265" target="_blank"><i
+                  class="fab fa-youtube fa-2x"></i>YouTube</a>
             </li>
           </ul>
-
         </div>
-        <div class="footer-links">
-          <ul>
-            <li><a href="">Ana Sayfa</a></li>
-            <li><a href="">Hakkımızda</a></li>
-            <li><a href="">Cemiyetler</a></li>
-            <li><a href="">Foto Galeri</a></li>
-            <li><a href="">İletişim</a></li>
-
+        <div class="bottom-text">
+          <ul class="text-flex">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="duyurular.html">Duyurular</a></li>
+            <li><a href="haberler.html">Haberler</a></li>
+            <li><a href="piyasalar.html">Piyasalar</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="yonetim.html">Yönetim</a></li>
           </ul>
         </div>
-        <div class="footer-contact">
-
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5993.526159514932!2d26.510166076807018!3d41.31401741708384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b304098734c259%3A0x9f7345ae5e0e499c!2sSerem%2C%2022680%20Serem%2FMeri%C3%A7%2FEdirne!5e0!3m2!1str!2str!4v1677256235916!5m2!1str!2str"
-              width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <a
-              href="https://www.google.com/maps/dir//Serem,+22680+Serem%2FMeri%C3%A7%2FEdirne/@41.3140175,26.5145435,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14b304098734c259:0x9f7345ae5e0e499c!2m2!1d26.5158!2d41.3149" target="_blank">
-              <img src="images/location.png" alt="Yol Tarifi Al" width="250px">
-
-            </a>
-          </div>
+        <div class="location">
+          <a href="https://goo.gl/maps/4EdWeExA9He6yqnW7" target="_blank">
+            <h1>
+              <i class="fa-solid fa-map-location-dot"></i> Haritayı Aç
+            </h1>
+          </a>
+          <a href="https://www.google.com/maps/dir//Serem,+22680+Serem%2FMeri%C3%A7%2FEdirne/@41.3140175,26.5145435,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14b304098734c259:0x9f7345ae5e0e499c!2m2!1d26.5158!2d41.3149"
+            target="_blank">
+            <h1>
+              <i class="fa-solid fa-map-pin"></i> Yol Tarifi Al
+            </h1>
+          </a>
         </div>
       </div>
 
     </footer>
     <div class="copyright">
-      <p class="copy">Copyright&copy; 2023 Seremköy v1.0 BETA. Made by rnm - bablock</p>
+      <p id="copy"></p>
     </div>
   </div>
   <script src="index.js"></script>
-
 </body>
 
 </html>
