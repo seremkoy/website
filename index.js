@@ -9,19 +9,39 @@ toTop.addEventListener('click', function () { //Butona click eventi
 })
 //Scroll Back To Top -END-
 
-//Copyright için tarih -START-
-let year = new Date();
-year.getFullYear(); //Yılın seçilmesi
-//Yılın footer'a yazdırılması
-document.getElementById("copy").innerHTML = `Tüm hakları saklıdır. &copy; ${year.getFullYear()} Seremköy v.0.5 <br><span class="cr"> </span><br><span class="dvlpr">Creators rnm💀 - fatih nayir🐦</span>`
-//Copyright için tarih -END-
+/*MOBILE MENU AREA START*/ 
+function MobileNav(){
+ 
+  const Mtoggle = document.getElementById("mobile-menu");
+  const mTog = document.getElementById("mTog");
+  const togBtn = document.getElementById("mobile-toggle");
+  
+  document.addEventListener('click', function(e) {
+    if (!Mtoggle.contains(e.target) && e.target != mTog ) {
+        Mtoggle.style.transform = "translateX(1000px)";
+        Mtoggle.style.display = 'none'
+        mTog.classList.add('fa-ellipsis');
+        mTog.classList.remove('fa-circle-xmark');
 
+    }
+});
+  if (Mtoggle.style.transform === "translateX(0px)" ){
+      Mtoggle.style.transform = "translateX(1000px)";
+      mTog.classList.add('fa-ellipsis');
+      Mtoggle.style.display = 'none'
+      mTog.classList.remove('fa-circle-xmark');
+      
 
-
-
-
+  } else{
+      Mtoggle.style.transform = "translateX(0px)"     
+      mTog.classList.add('fa-circle-xmark');
+      Mtoggle.style.display = 'flex'
+      mTog.classList.remove('fa-ellipsis');
+  }   
+}
+/*MOBILE MENU AREA END*/ 
 const weatherCont = document.getElementById("weather-cont")
-
+const mobileWeather = document.querySelector('.mobile-weather')
 async function weatherApi() {
   try {
     // API isteği atılır
@@ -33,10 +53,6 @@ async function weatherApi() {
 
     if (response.ok) {
       // Yanıt başarılı
-
-      // Alınan veriler konsola yazdırılır
-      console.log(data);
-
       //Alınan veriler değişkene atanır
       const weatherMain = data.weather[0].main
       const weatherIcon = data.weather[0].icon
@@ -54,6 +70,7 @@ async function weatherApi() {
 
 
         weatherCont.innerHTML = weatherTemplate;
+        mobileWeather.innerHTML = weatherTemplate;
     } else {
       // Yanıt başarılı değilse, bir hata fırlatılır
       throw new Error("API isteği başarısız oldu")
@@ -66,20 +83,46 @@ async function weatherApi() {
 
 weatherApi();
 
+//Copyright için tarih -START-
+let year = new Date();
+year.getFullYear(); //Yılın seçilmesi
+//Yılın footer'a yazdırılması
+document.getElementById("copy").innerHTML = `Tüm hakları saklıdır. &copy; ${year.getFullYear()} Seremköy v. 1 <span class="dvlpr">Created By <a href="https://linktr.ee/develoop" target="_blank">DeveloopWD</a></span>`
+//Copyright için tarih -END-
+
+//POP UP SECTION
+const popUp = document.querySelector(".pop-up");
+const closeButton = document.querySelector("#close-pop");
+const progressBar = document.getElementById("progress-bar");
+function openPopUp() {
+  popUp.classList.add("show");
+  progressBar.style.width = "100%";
+  setTimeout(closePopUp, 20000); 
+  startProgressBar();
+}
+
+function closePopUp() {
+  popUp.classList.remove("show");
+}
+function startProgressBar() {
+  let width = 100;
+  const interval = setInterval(frame, 195); // Her 100 milisaniyede bir frame() fonksiyonunu çağır
+
+  function frame() {
+    if (width <= 0) {
+      clearInterval(interval); // İlerleme çubuğu tamamen azaldığında interval'i temizle
+    } else {
+      width--;
+      progressBar.style.width = width + "%"; // İlerleme çubuğunun genişliğini güncelle
+    }
+  }
+}
+closeButton.addEventListener("click", closePopUp);
 
 
+window.onload
 
 
+window.onload = openPopUp
 
-
-
-const hamburgerButton = document.getElementById("hamburger")
-const mobileNav = document.querySelector(".menu-list")
-const hiddenLength = document.querySelectorAll(".hidden").length
-
-
-
-//EMAILJS BEGIN
-
-
-//EMAILJS END
+// POP UP SECTION END

@@ -5,7 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seremköy</title>
+  <meta name="description"
+    content="Seremköy Websitesi, Seremköy Edirne'nin Meriç İlçesine Bağlı Sınır Köyüdür, Düğün, Cemiyet, Mevlüt Duyuruları, Ülke Geneli Haberler Piyasa ve Borsaları Köyümüzün Sitesinden Takip Edebilirsiniz">
+  <meta name="keywords" content="Seremköy, Seremköy Site, Serem, Seremköy Website,Seremköy Düğün, Seremköy Haberleri">
+  <link rel="shortcut icon" href="./public_html/images/favicon1.ico" type="image/x-icon">
+  <title>Seremköy Websitesi | Ana Sayfa</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -15,6 +19,16 @@
 </head>
 
 <body>
+  <div class="pop-up">
+    <h1>Seremköy'e Hoş Geldiniz!</h1>
+    <h3 id="pop-header">Bilgilendirme</h3>
+    <p id="pop-text">
+      Sitenin Domain ve Hosting Ücretleri Köy Muhtarlığı Tarafından Karşılanmadığı İçin Siteyi Ücretsiz Platformdan
+      Yayınlıyoruz. Bu Yüzden "Site Güvenli Değil" Uyarısı Alabilirsiniz. Herhangi Bir Bilgi İstenmediği İçin Bu Uyarıyı
+      Dİkkate Almamanızı Öneririz. <br> İlginiz İçin Teşekkürler!</p>
+    <span id="close-pop"><i class="fa-solid fa-xmark"></i></span>
+    <div id="progress-bar"></div>
+  </div>
   <a href="javascript:void(0)" id="scrl"><i class="fa-solid fa-arrow-up"></i></a>
   <div class="container">
     <header>
@@ -29,28 +43,33 @@
             <li><a href="index.html" class="nav">Ana Sayfa</a></li>
             <li><a href="duyurular.html" class="nav">Duyurular</a></li>
             <li><a href="haberler.html" class="nav">Haberler</a></li>
-            <li><a href="Piyasalar.html" class="nav">Piyasalar</a></li>
+            <li><a href="piyasalar.html" class="nav">Piyasalar</a></li>
             <li><a href="hakkimizda.html" class="nav">Hakkımızda</a></li>
-            <li><a href="yonetim.html" class="nav">Yönetim</a></li>
           </ul>
         </div>
-        <div id="weather-cont">
+        <div id="weather-cont" class="desk-weather">
         </div>
         <div class="mobile-menu">
-          <input id="hamburger-input" type="checkbox">
-          <label id="hamburger" for="hamburger-input">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
-          </label>
-          <div class="menu-list">
+          <button id="mobile-toggle" style="background: transparent;" onclick="MobileNav()">
+            <i class="fa-solid fa-ellipsis" id="mTog"></i>
+          </button>
+          <div class="menu-list" id="mobile-menu">
+            <div id="weather-cont" class="mobile-weather"></div>
             <ul class="menu-list-ul">
               <li class="menu-list-li"><a href="index.html">Anasayfa</a></li>
               <li class="menu-list-li"><a href="duyurular.html">Duyurular</a></li>
               <li class="menu-list-li"><a href="haberler.html">Haberler</a></li>
               <li class="menu-list-li"><a href="piyasalar.html">Piyasalar</a></li>
               <li class="menu-list-li"><a href="hakkimizda.html">Hakkımızda</a></li>
-              <li class="menu-list-li"><a href="yonetim.html">Yönetim</a></li>
+            </ul>
+            <ul class="mobile-social">
+              <li><a class="face" href="https://www.facebook.com/seremkoy22/?locale=tr_TR" target="_blank"><i
+                    class="fab fa-facebook fa-2x"></i></a></li>
+              <li><a class="insta" href="https://www.instagram.com/seremkoy22/" target="_blank"><i
+                    class="fab fa-instagram fa-2x"></i></a></li>
+              <li><a class="youtube" href="https://www.youtube.com/@seremkoy2265" target="_blank"><i
+                    class="fab fa-youtube fa-2x"></i></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -66,22 +85,20 @@
           </svg>
           <div class="text-area">
             <h1>Seremköy'e <br> Hoş Geldiniz!</h1>
-
             <p>
               Cemiyetler,Mevlüt ve Cenaze Duyuruları Gibi Anlık Haberleri Sitemizden Takip Edebilirsiniz.
             </p>
-
           </div>
         </div>
         <div class="home-area-r">
-          <img src="images/Farmer-amico (3).png" alt="" />
+          <img src="./public_html/images/farmer.png" alt="" />
         </div>
       </section>
     </main>
     <div class="content">
       <div class="contHeader">
-        <h1 class="contentH">Header</h1>
-        <p class="contentP">Lorem ipsum dolor sit amet consectetur.</p>
+        <h1 class="contentH">Hızlı Gezinti Kartları</h1>
+        <p class="contentP"></p>
       </div>
       <div class="contCardMain">
         <div class="contCard">
@@ -129,13 +146,35 @@
               <i class="fa-solid fa-users fa-xl icon2"></i>
             </div>
             <div>
-              <h1 class="contCardH2">Yönetim</h1>
+              <h1 class="contCardH2">Hakkımızda</h1>
               <p class="contCardP">
-                Muhtar, yönetim ve geliştirici bilgilerine ulaşabilirsiniz.
+                Köyümüz Hakkında Genel Bilgi ve Köyümüzün Tarihçesi
               </p>
             </div>
-            </a>
+          </a>
         </div>
+      </div>
+    </div>
+    <div class="video-area">
+      <h3>Köyümüzün Düğünlerinden Videolar</h3>
+      <div class="videos">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gZ72jgbANnE" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ixRHwOrGc1E" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GbCyE3VMOS0" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/E6d7jDwYmMY" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
       </div>
     </div>
     <footer>

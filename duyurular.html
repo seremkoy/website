@@ -5,8 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seremköy</title>
+  <meta name="description" content="Seremköy Websitesi, Düğün, Cemiyet, Mevlüt Duyuruları Köyümüzün Sitesinden Takip Edebilirsiniz">
+  <meta name="keywords" content="Seremköy, Seremköy Site, Serem, Seremköy Website,Seremköy Düğün, Seremköy Duyurular">
+  <title>Seremköy Websitesi | Duyurular</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./public_html/images/favicon1.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,7 +21,7 @@
   <a href="javascript:void(0)" id="scrl"><i class="fa-solid fa-arrow-up"></i></a>
   <div class="container-d">
     <header>
-      <nav>
+       <nav>
         <div class="logo">
           <a href="index.html">
             <h4>Seremköy</h4>
@@ -29,28 +32,33 @@
             <li><a href="index.html" class="nav">Ana Sayfa</a></li>
             <li><a href="duyurular.html" class="nav">Duyurular</a></li>
             <li><a href="haberler.html" class="nav">Haberler</a></li>
-            <li><a href="Piyasalar.html" class="nav">Piyasalar</a></li>
+            <li><a href="piyasalar.html" class="nav">Piyasalar</a></li>
             <li><a href="hakkimizda.html" class="nav">Hakkımızda</a></li>
-            <li><a href="yonetim.html" class="nav">Yönetim</a></li>
           </ul>
         </div>
-        <div id="weather-cont">
+        <div id="weather-cont" class="desk-weather">
         </div>
         <div class="mobile-menu">
-          <input id="hamburger-input" type="checkbox">
-          <label id="hamburger" for="hamburger-input">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
-          </label>
-          <div class="menu-list">
+          <button id="mobile-toggle" style="background: transparent;" onclick="MobileNav()">
+            <i class="fa-solid fa-ellipsis" id="mTog"></i>
+          </button>
+          <div class="menu-list" id="mobile-menu">
+            <div id="weather-cont" class="mobile-weather"></div>
             <ul class="menu-list-ul">
               <li class="menu-list-li"><a href="index.html">Anasayfa</a></li>
               <li class="menu-list-li"><a href="duyurular.html">Duyurular</a></li>
               <li class="menu-list-li"><a href="haberler.html">Haberler</a></li>
               <li class="menu-list-li"><a href="piyasalar.html">Piyasalar</a></li>
               <li class="menu-list-li"><a href="hakkimizda.html">Hakkımızda</a></li>
-              <li class="menu-list-li"><a href="yonetim.html">Yönetim</a></li>
+            </ul>
+            <ul class="mobile-social">
+              <li><a class="face" href="https://www.facebook.com/seremkoy22/?locale=tr_TR" target="_blank"><i
+                class="fab fa-facebook fa-2x"></i></a></li>
+          <li><a class="insta" href="https://www.instagram.com/seremkoy22/" target="_blank"><i
+                class="fab fa-instagram fa-2x"></i></a></li>
+          <li><a class="youtube" href="https://www.youtube.com/@seremkoy2265" target="_blank"><i
+                class="fab fa-youtube fa-2x"></i></a>
+          </li>
             </ul>
           </div>
         </div>
@@ -68,40 +76,8 @@
           </li>
         </ul>
       </div>
-      <div class="duyuru-cont-main">
-        <div class="duyuruCont1">
-          <div class="duyuruIconCont">
-            <i class="fa-solid fa-ring fa-2x"></i>
-          </div>
-          <div class="duyuruTextCont">
-            <h1 class="duyuruBaslik">DÜĞÜN</h1>
-            <p class="duyuruText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquid, enim
-              libero minus iste veniam optio numquam nihil ullam minima?</p>
-          </div>
-        </div>
-        <hr>
-        <div class="duyuruCont1">
-          <div class="duyuruIconCont">
-            <i class="fa-solid fa-scissors fa-2x"></i>
-          </div>
-          <div class="duyuruTextCont">
-            <h1 class="duyuruBaslik">SÜNNET</h1>
-            <p class="duyuruText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquid, enim
-              libero minus iste veniam optio numquam nihil ullam minima?</p>
-          </div>
-        </div>
-        <hr>
-        <div class="duyuruCont1">
-          <div class="duyuruIconCont">
-            <i class="fa-solid fa-bullhorn fa-2x"></i>
-          </div>
-          <div class="duyuruTextCont">
-            <h1 class="duyuruBaslik">DUYURU</h1>
-            <p class="duyuruText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquid, enim
-              libero minus iste veniam optio numquam nihil ullam minima?</p>
-              <p><a href="#">Detaylar için tıklayın...</a></p>
-          </div>
-        </div>
+      <div id="duyuru-cont-main">
+      
       </div>
     </section>
     <footer>
@@ -148,6 +124,7 @@
     </div>
   </div>
   <script src="index.js"></script>
+  <script src="duyurular.js"></script>
 </body>
 
 </html>

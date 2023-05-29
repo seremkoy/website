@@ -1,19 +1,12 @@
 "use-strict"
 
-
-//Scroll Back To Top -START-
-function scroll(){
+function scroll() {
     window.scrollTo({ //Tıklandığında yönlendirecek fonksiyon
         top: 0, //Top konumu
         left: 0, //Left konumu
         behavior: 'smooth' //Hareket şekli
-      });
+    });
 }
-
-let toTop = document.getElementById('scrl') //to top butonunun seçilmesi
-toTop.addEventListener('click', scroll)
-//Scroll Back To Top -END-
-
 
 const RSS_URL = "https://www.mynet.com/haber/rss/kategori/guncel/";
 // // const PROXY_URL = "https://api.allorigins.win/raw?url=" + encodeURIComponent(RSS_URL);
@@ -32,6 +25,7 @@ async function mynetRSS() {
         const data = parser.parseFromString(xmlData, "text/xml")
         const items = Array.from(data.querySelectorAll("item"))
         const filteredItems = items.slice(sliceStart, sliceEnd)
+        console.log(items.length)
 
         filteredItems.forEach(item => {
             const title = item.querySelector("title").textContent;
@@ -49,10 +43,11 @@ async function mynetRSS() {
                                 <img class="news-img" src="${image}" alt="">
                                 <div class="newsContent">
                                 <h1 class="bold">${title}</h1>
-                                <p>${desc}</p>
+                                <div id="hbr"> <p>${desc}</p> </div>
+                                
                                 <p><span class="bold">Yayınlanma Tarihi: </span>${date}</p>
                                 <p><span class="bold">Kaynak: </span>${source}</p>
-                                <button class="newsLink" type="button"> <a href="${link}" target="_blank">Habere Git</a></button>
+                                 <a href="${link}" target="_blank" class="newsLink">Habere Git</a>
                                 </div>
                             </div>
                         `
@@ -65,11 +60,13 @@ async function mynetRSS() {
 
 const nextNews = document.getElementById("next")
 nextNews.addEventListener("click", () => {
-    count = count + 12
-    sliceStart = sliceStart + 12
-    sliceEnd = sliceEnd + 12
-    mynetRSS(count)
-    scroll()
+    if (count < 50) {
+        count = count + 12
+        sliceStart = sliceStart + 12
+        sliceEnd = sliceEnd + 12
+        mynetRSS(count)
+        scroll()
+    }
 })
 
 const forwardNews = document.getElementById("forward")
