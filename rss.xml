@@ -40,5 +40,35 @@
     <url>https://scontent.fist4-1.fna.fbcdn.net/v/t39.30808-6/347408929_789999922758468_4118922266501127296_n.jpg?stp=dst-jpg_s720x720&amp;_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=8bfeb9&amp;_nc_ohc=x-37ksKZNw0AX-cTLPe&amp;_nc_ht=scontent.fist4-1.fna&amp;oh=00_AfB5425naKoWrU50hY_DH0H4or7TLbXjt2zF4aVgxwr-6g&amp;oe=646F26DE</url>
     </enclosure>
     </item>
-    </channel>
+    
+        <item>
+        <title>test duyuru</title>
+        <type>test duyuru</type>
+        <description>test duyuru</description>
+        <date>test duyuru</date>
+        <enclosure>
+        <url>test duyuru</url>
+        </enclosure>
+        </item>
+        
+        <item>
+        <title>qwe</title>
+        <type>qwe</type>
+        <description>qwe</description>
+        <date>qwe</date>
+        <enclosure>
+        <url>qwe</url>
+        </enclosure>
+        </item>
+        
+        <item>
+        <title>qwe</title>
+        <type>qwe</type>
+        <description>qwe</description>
+        <date>qwe</date>
+        <enclosure>
+        <url>qwe</url>
+        </enclosure>
+        </item>
+        </channel>
 </rss>
