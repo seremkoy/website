@@ -39,7 +39,7 @@ const main = async () => {
         try {
             await updateRSS();
             //Git komutunu çalıştırma fonksiyonunu çağırma
-            await runExampleGitCommand('git status', 'git add .', 'git commit -m "rss update test"','git push');
+            await runExampleGitCommand('git status', 'git add .', 'git commit -m "rss update test"', 'git push');
         } catch (updateCallError) {
             console.log("Güncelleme hatası:", updateCallError);
         }
