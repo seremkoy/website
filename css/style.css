@@ -1,16 +1,13 @@
-/* @import url("family=Nunito:ital,[email protected],200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000"); */
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap");
+
   @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700&display=swap');
 
 @font-face {
   font-family: "Rage Italic";
-  src: url("fonts/RageItalicRegular.ttf") format("embedded-opentype"),
-    url("fonts/RageItalicRegular.ttf") format("woff2"),
-    url("fonts/RageItalicRegular.ttf") format("woff"),
-    url("fonts/RageItalicRegular.ttf") format("truetype"),
-    url("fonts/RageItalicRegular.ttf") format("svg");
+  src: url("../fonts/RageItalicRegular.ttf") format("embedded-opentype"),
+    url("../fonts/RageItalicRegular.ttf") format("woff2"),
+    url("../fonts/RageItalicRegular.ttf") format("woff"),
+    url("../fonts/RageItalicRegular.ttf") format("truetype"),
+    url("../fonts/RageItalicRegular.ttf") format("svg");
 }
 * {
   margin: 0;
@@ -26,7 +23,7 @@
   font-family: 'Wix Madefor Display', sans-serif;
 }
 html {
-  background-image: url(images/mesh-679.png);
+  background-image: url(../images/mesh-679.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
