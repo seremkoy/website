@@ -50,5 +50,15 @@
         <url>test</url>
         </enclosure>
         </item>
+        
+        <item>
+        <title>bablak</title>
+        <type>bablak</type>
+        <description>bablak</description>
+        <date>bablakb</date>
+        <enclosure>
+        <url>bablak</url>
+        </enclosure>
+        </item>
         </channel>
 </rss>
