@@ -6,11 +6,11 @@
 
 @font-face {
   font-family: "Rage Italic";
-  src: url("RageItalicRegular.ttf") format("embedded-opentype"),
-    url("RageItalicRegular.ttf") format("woff2"),
-    url("RageItalicRegular.ttf") format("woff"),
-    url("RageItalicRegular.ttf") format("truetype"),
-    url("RageItalicRegular.ttf") format("svg");
+  src: url("fonts/RageItalicRegular.ttf") format("embedded-opentype"),
+    url("fonts/RageItalicRegular.ttf") format("woff2"),
+    url("fonts/RageItalicRegular.ttf") format("woff"),
+    url("fonts/RageItalicRegular.ttf") format("truetype"),
+    url("fonts/RageItalicRegular.ttf") format("svg");
 }
 * {
   margin: 0;
