@@ -1,6 +1,7 @@
-fonts/
-.vscode/*
-.vscode/settings.json
-.vscode/task.json
-.vscode/launch.json
-.vscode/extensions.json
+package.json
+package-lock.json
+node_modules
+yonetim.html
+*.bat
+*.xml
+autopush.js

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-  
-    
     <item>
     <title>DÜĞÜN</title>
     <type>DÜĞÜN</type>
     <description>Zerda ve Barkın Evlilik Düğününe Hepiniz Davetlisiniz.</description>
     <date>01 Temmuz 2023 Saat 20:00</date>
     <enclosure>
-    <url>https://scontent.fist4-1.fna.fbcdn.net/v/t39.30808-6/347096407_238166975483380_1631218039500359148_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=8bfeb9&amp;_nc_ohc=l7jU5RyScfcAX9zpHhp&amp;_nc_ht=scontent.fist4-1.fna&amp;oh=00_AfC9FATzm039IpHMsS3EMNpF4GK0l_mO1Dwbsn9Qes7_bQ&amp;oe=646FEB0E</url>
+    <url>farmer.png</url>
     </enclosure>
     </item>
     
@@ -42,5 +40,5 @@
     <url>https://scontent.fist4-1.fna.fbcdn.net/v/t39.30808-6/347408929_789999922758468_4118922266501127296_n.jpg?stp=dst-jpg_s720x720&amp;_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=8bfeb9&amp;_nc_ohc=x-37ksKZNw0AX-cTLPe&amp;_nc_ht=scontent.fist4-1.fna&amp;oh=00_AfB5425naKoWrU50hY_DH0H4or7TLbXjt2zF4aVgxwr-6g&amp;oe=646F26DE</url>
     </enclosure>
     </item>
-    </channel>
+        </channel>
 </rss>

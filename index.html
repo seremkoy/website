@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Seremköy Websitesi, Seremköy Edirne'nin Meriç İlçesine Bağlı Sınır Köyüdür, Düğün, Cemiyet, Mevlüt Duyuruları, Ülke Geneli Haberler Piyasa ve Borsaları Köyümüzün Sitesinden Takip Edebilirsiniz">
+  <meta name="description"
+    content="Seremköy Websitesi, Seremköy Edirne'nin Meriç İlçesine Bağlı Sınır Köyüdür, Düğün, Cemiyet, Mevlüt Duyuruları, Ülke Geneli Haberler Piyasa ve Borsaları Köyümüzün Sitesinden Takip Edebilirsiniz">
   <meta name="keywords" content="Seremköy, Seremköy Site, Serem, Seremköy Website,Seremköy Düğün, Seremköy Haberleri">
   <link rel="shortcut icon" href="images/favicon1.ico" type="image/x-icon">
   <title>Seremköy Websitesi | Ana Sayfa</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,12 +18,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
-
 <body>
   <div class="pop-up">
     <h1>Seremköy'e Hoş Geldiniz!</h1>
     <h3 id="pop-header">Bilgilendirme</h3>
-    <p id="pop-text">seremkoy.com Alan Adını Alamadığımız ve Ücretsiz Platformdan Daha Yavaş Bir Şekilde Hizmet Verdiğimiz İçin Özür Dİleriz. Köy Muhtarlığı Tarafından Talep Ettiğimiz Hosting ve Domain Ücretine Olumsuz Yanıt Aldığımız İçin Siteyi Buradan Yayınlamak Durumundayız. Ücretsiz Platformdan Yayınlandığından Ötürü SSL sertifikası Olmadığından Site Güvenli Değil Uyarısı Verebilir. Herhangi Bir Bilgi İstenmediği İçin Bu Uyarıyı Dİkkate Almamanızı Öneririz.<br> İlginiz İçin Teşekkürler!</p>
+    <p id="pop-text">
+      Sitemiz test aşamasındadır. Bu nedenle, herhangi bir sorunla karşılaşırsanız, lütfen "seremkoydestek@gmail.com" e-posta adresine bir e-posta göndererek bize bildirin.</p>
     <span id="close-pop"><i class="fa-solid fa-xmark"></i></span>
     <div id="progress-bar"></div>
   </div>
@@ -40,20 +41,13 @@
             <li><a href="index.html" class="nav">Ana Sayfa</a></li>
             <li><a href="duyurular.html" class="nav">Duyurular</a></li>
             <li><a href="haberler.html" class="nav">Haberler</a></li>
-            <li><a href="Piyasalar.html" class="nav">Piyasalar</a></li>
+            <li><a href="piyasalar.html" class="nav">Piyasalar</a></li>
             <li><a href="hakkimizda.html" class="nav">Hakkımızda</a></li>
-            <!-- <li><a href="yonetim.html" class="nav">Yönetim</a></li> -->
           </ul>
         </div>
         <div id="weather-cont" class="desk-weather">
         </div>
         <div class="mobile-menu">
-          <!-- <input id="hamburger-input" type="checkbox">
-          <label id="hamburger" for="hamburger-input">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
-          </label> -->
           <button id="mobile-toggle" style="background: transparent;" onclick="MobileNav()">
             <i class="fa-solid fa-ellipsis" id="mTog"></i>
           </button>
@@ -65,16 +59,15 @@
               <li class="menu-list-li"><a href="haberler.html">Haberler</a></li>
               <li class="menu-list-li"><a href="piyasalar.html">Piyasalar</a></li>
               <li class="menu-list-li"><a href="hakkimizda.html">Hakkımızda</a></li>
-              <!-- <li class="menu-list-li"><a href="yonetim.html">Yönetim</a></li> -->
             </ul>
             <ul class="mobile-social">
               <li><a class="face" href="https://www.facebook.com/seremkoy22/?locale=tr_TR" target="_blank"><i
-                class="fab fa-facebook fa-2x"></i></a></li>
-          <li><a class="insta" href="https://www.instagram.com/seremkoy22/" target="_blank"><i
-                class="fab fa-instagram fa-2x"></i></a></li>
-          <li><a class="youtube" href="https://www.youtube.com/@seremkoy2265" target="_blank"><i
-                class="fab fa-youtube fa-2x"></i></a>
-          </li>
+                    class="fab fa-facebook fa-2x"></i></a></li>
+              <li><a class="insta" href="https://www.instagram.com/seremkoy22/" target="_blank"><i
+                    class="fab fa-instagram fa-2x"></i></a></li>
+              <li><a class="youtube" href="https://www.youtube.com/@seremkoy2265" target="_blank"><i
+                    class="fab fa-youtube fa-2x"></i></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -83,18 +76,15 @@
     <main>
       <section class="home-area">
         <div class="home-area-l">
-          <svg viewBox="0 0 200 200" id="svg" xmlns="http://www.w3.org/2000/svg">
-            <path id="path" fill="#C2BBA6"
-              d="M42.4,-71.6C54.1,-66.6,62.1,-53.6,62.7,-40.3C63.3,-27,56.4,-13.5,55.9,-0.3C55.3,12.9,61.1,25.7,59.9,38C58.7,50.2,50.5,61.7,39.4,67.3C28.2,72.8,14.1,72.3,2.7,67.6C-8.6,62.9,-17.3,53.9,-30.6,49.6C-43.9,45.3,-61.9,45.7,-67.3,38.2C-72.7,30.7,-65.5,15.4,-62.1,2C-58.6,-11.4,-59,-22.8,-57.1,-36.4C-55.2,-50,-51.1,-65.7,-41.2,-71.7C-31.3,-77.6,-15.7,-73.9,-0.2,-73.6C15.3,-73.3,30.7,-76.5,42.4,-71.6Z"
-              transform="translate(100 100)" />
-          </svg>
           <div class="text-area">
             <h1>Seremköy'e <br> Hoş Geldiniz!</h1>
-
             <p>
-              Cemiyetler,Mevlüt ve Cenaze Duyuruları Gibi Anlık Haberleri Sitemizden Takip Edebilirsiniz.
+              Sitemizden Cemiyetler, Mevlüt ve Cenaze Duyuruları, Ülke Gündeminden Haberler ve Kripto Borsa Piyasaları gibi anlık haberleri takip edebilirsiniz.
             </p>
-
+            <div class="home-page-buttons">
+                <a href="https://www.youtube.com/@seremkoy2265">Duyurular</a>
+                <a href="https://www.youtube.com/@seremkoy2265">Hakkımızda</a>
+            </div>
           </div>
         </div>
         <div class="home-area-r">
@@ -155,21 +145,11 @@
             <div>
               <h1 class="contCardH2">Hakkımızda</h1>
               <p class="contCardP">
-                Köyümüz Hakkında Genel Bilgi ve Köyümüzün Tarihçesi 
+                Köyümüz Hakkında Genel Bilgi ve Köyümüzün Tarihçesi
               </p>
             </div>
-            </a>
+          </a>
         </div>
-      </div>
-    </div>
-    <div class="video-area">
-      <h3>Köyümüzün Düğünlerinden Videolar</h3>
-      <div class="videos">
-        
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/gZ72jgbANnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ixRHwOrGc1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/GbCyE3VMOS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/E6d7jDwYmMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
     <footer>
@@ -192,7 +172,6 @@
             <li><a href="haberler.html">Haberler</a></li>
             <li><a href="piyasalar.html">Piyasalar</a></li>
             <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="yonetim.html">Yönetim</a></li>
           </ul>
         </div>
         <div class="location">
@@ -215,7 +194,7 @@
       <p id="copy"></p>
     </div>
   </div>
-  <script src="index.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
