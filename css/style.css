@@ -391,15 +391,15 @@ h3 {
 .temp img{
   width: 50px;
 }
-main {
-  position: sticky;
+/* main {
+  position: relative;
   top: 0;
-  z-index: -1;
-}
+} */
 .home-area {
   display: flex;
   width: 100%;
   height: 90vh;
+  /* background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(/images/background.png); */
 }
 .home-area-l,
 .home-area-r {
@@ -416,33 +416,48 @@ main {
   justify-content: center;
 }
 .text-area {
+  text-align: left;
   display: flex;
-  align-items: center;
+  height: 60%;
+  padding-left:3rem;
+  justify-content: space-evenly;
   flex-direction: column;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 .home-area-l h1 {
-  font-weight: 500;
+  font-weight: 700;
   color: var(--dark);
-  font-size: 3.5vw;
+  font-size: 4.5vw;
+  text-shadow: 2px 2px 2px #303330;
 }
 .home-area-l p {
   color: #252525;
-  width: 70%;
+  width: 90%;
+  word-spacing: 5px;
   font-size: 1.5vw;
 }
-.home-area-l p {
-  width: 50%;
+.home-area-l .home-page-buttons{
+  display: flex;
+  align-items: center;
+  width: 70%;
+  gap: 2rem;
+}
+.home-area-l .home-page-buttons a{
+  padding: 1rem 2rem;
+  background-color: var(--dark);
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  color: #efe;
 }
 .home-area-r img {
-  width: 45vw;
+  width: 40vw;
 }
 @keyframes slide {
   0% {
-    transform: translateX(1000px);
+    transform: translateY(1000px);
   }
   100% {
-    transform: translateX(200px);
+    transform: translateY(200px);
   }
 }
 .container {
@@ -1484,6 +1499,12 @@ body::-webkit-scrollbar-thumb {
   #mobile-toggle{
     display: block;
   }
+  #scrl{
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+
+  }
   #svg {
     width: 90%;
   }
@@ -1491,7 +1512,7 @@ body::-webkit-scrollbar-thumb {
     display: block;
   }
   .home-area {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .home-area-l,
   .home-area-r {
@@ -1502,8 +1523,16 @@ body::-webkit-scrollbar-thumb {
     width: 90%;
   }
   .text-area {
-    height: 40%;
+    height: 99%;
     width: 90%;
+    padding-left: 0.5rem ;
+  }
+  .home-area-l .home-page-buttons{
+    gap: 1rem;
+  }
+  .home-area-l .home-page-buttons a{
+    font-size: 1rem;
+    padding: 1rem;
   }
   .about-txt{
     max-width: 100%;
