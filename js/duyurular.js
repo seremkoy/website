@@ -19,7 +19,7 @@ async function fetchDuyuruRSS (){
             let announceTemplate = `
             <div class="duyuruCont1">
             <div class="duyuruIconCont">
-            <img class="duyuru-image" src="images/${url}">
+            <img class="duyuru-image" src="images/${url}.webp" alt="Duyuru Görseli">
             </div>
             <div class="duyuruTextCont">
               <h1 class="duyuruBaslik">${title}</h1>
@@ -39,3 +39,19 @@ async function fetchDuyuruRSS (){
 
 fetchDuyuruRSS()
 
+// var duyuruImages = document.getElementsByClassName("duyuru-image");
+// var popupImage = document.getElementById("duyuru-pop-img");
+// var popup = document.getElementById("duyuru-pop");
+// var closeBtn = document.getElementById("off");
+
+// Array.from(duyuruImages).forEach(function(image) {
+//   image.addEventListener("click", function() {
+//     var imageSource = this.src;
+//     popupImage.src = imageSource;
+//     // popup.style.display = "block";
+//   });
+// });
+
+// closeBtn.addEventListener("click", function() {
+//   popup.style.display = "none";
+// });

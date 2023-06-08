@@ -40,7 +40,7 @@ async function mynetRSS() {
             let newsTemplate =
                 `
                             <div class="card">
-                                <img class="news-img" src="${image}" alt="">
+                                <img class="news-img" src="${image}" alt="Haber Görseli">
                                 <div class="newsContent">
                                 <h1 class="bold">${title}</h1>
                                 <div id="hbr"> <p>${desc}</p> </div>

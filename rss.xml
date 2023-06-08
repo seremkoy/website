@@ -7,70 +7,71 @@
     <description>Zerda ve Barkın Evlilik Düğününe Hepiniz Davetlisiniz.</description>
     <date>01 Temmuz 2023 Saat 20:00</date>
     <enclosure>
-    <url>barkin-zerda.jpg</url>
-    </enclosure>
-    </item>
-    
-    <item>
-    <title>DÜĞÜN</title>
-    <type>DÜĞÜN</type>
-    <description>Sedef ve Oğuzhan Çiftinin Evlilik Düğününe Tüm Dost ve Akrabaları Davetlidir.</description>
-    <date>Kına:30 Haziran 2023 Düğün: 1 Temmuz 2023</date>
-    <enclosure>
-    <url>sedef-dugun.jpg</url>
-    </enclosure>
-    </item>
-    
-    <item>
-    <title>NİŞAN</title>
-    <type>DÜĞÜN</type>
-    <description>Simge ve Savaş Çiftinin Nişan Törenine Hepiniz Davetlisiniz.</description>
-    <date>19 Ağustos 2023</date>
-    <enclosure>
-    <url>simge-savas.jpg</url>
+    <url>zerdavebarkin</url>
     </enclosure>
     </item>
 
     
-
     <item>
-    <title>SÜNNET DÜĞÜNÜ</title>
-    <type>DÜĞÜN</type>
-    <description>Yasemin ve Hasan Deniz'in Oğulları Kerem ve Erdem Kardeşlerimizin Sünnet Düğününe Hepiniz Davetlisiniz.</description>
-    <date>18 Haziran 2023</date>
+    <title>19 MAYIS</title>
+    <type>RESMİ BAYRAM</type>
+    <description>19 Mayıs Atatürk'ü Anma, Gençlik ve Spor Bayramımız Kutlu Olsun.</description>
+    <date>19 Mayıs 2023</date>
     <enclosure>
-    <url>kerem-erdem-sunnet.jpg</url>
+    <url>19mayis</url>
     </enclosure>
     </item>
+    
 
-    <item>
-    <title>SÜNNET DÜĞÜNÜ</title>
-    <type>DÜĞÜN</type>
-    <description>Cabir Bilgen'in Torunu Ayşe Bilgen'in Oğlu Muhammed Meriç Kardeşimizin Sünnet Düğününe Hepiniz Davetlisiniz.</description>
-    <date>09 Temmuz 2023</date>
-    <enclosure>
-    <url>muhammed-sunnet.jpg</url>
-    </enclosure>
-    </item>
 
-    <item>
-    <title>DÜĞÜN</title>
-    <type>DÜĞÜN</type>
-    <description>Emre ve Elif Çiftinin Evlilik Düğününe Hepiniz Davetlisiniz.</description>
-    <date>21 Ekim 2023</date>
-    <enclosure>
-    <url>elif-emre.jpg</url>
-    </enclosure>
-    </item>
+     <item>
+        <title>DÜĞÜN</title>
+        <type>DÜĞÜN</type>
+        <description>Elif ve Emre - En güzel günümüzde sizleri aramızda görmekten mutluluk duyarız.</description>
+        <date>21 Ekim 2023</date>
+        <enclosure>
+        <url>simge-savas</url>
+        </enclosure>
+        </item>
 
-    <item>
-    <title>DUYURU</title>
-    <type>DÜĞÜN</type>
-    <description>TARSİM ÜRÜN SİGORTASI SON KABUL TARİHLERİ</description>
-    <date>Ayçiçek: 10 Haziran 2023 - Çeltik: 30 Haziran 2023</date>
-    <enclosure>
-    <url>sigorta.jpg</url>
-    </enclosure>
-    </item>
+        <item>
+        <title>SÜNNET</title>
+        <type>SÜNNET</type>
+        <description>Kerem ve Erdem - Sünnet düğünümüze siz değerli dost ve akrabalarımızı aramızda görmekten mutluluk duyarız...</description>
+        <date>18 Haziran 2023</date>
+        <enclosure>
+        <url>keremveerdemsunnet</url>
+        </enclosure>
+        </item>
+        
+        <item>
+        <title>SÜNNET MEVLİDİ</title>
+        <type>SÜNNET</type>
+        <description>Cabir Bilgen'in torunu Ayşe Bilgen'in oğlu Muhammed Meriç'in sünnet mevlidine tüm halkımız davetlidir.</description>
+        <date>9 Temmuz 2023 14:00</date>
+        <enclosure>
+        <url>muhammedmericsunnet</url>
+        </enclosure>
+        </item>
+        
+        <item>
+        <title>DÜĞÜN</title>
+        <type>DÜĞÜN</type>
+        <description>Elif ve Emre - En güzel günümüzde sizleri aramızda görmekten mutluluk duyarız.</description>
+        <date>21 Ekim 2023</date>
+        <enclosure>
+        <url>elifveemre</url>
+        </enclosure>
+        </item>
+
+             <item>
+        <title>DUYURU</title>
+        <type>DUYURU</type>
+        <description>TARSİM Ürün Sigortası Yaptırmak İsteyenler İçin Son Tarihler.</description>
+        <date>Ayçiçek: 10 Haziran 2023 - Çeltik: 30 Haziran  2023</date>
+        <enclosure>
+        <url>sigorta</url>
+        </enclosure>
+        </item>
         </channel>
 </rss>
