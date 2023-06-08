@@ -19,7 +19,7 @@ async function fetchDuyuruRSS (){
             let announceTemplate = `
             <div class="duyuruCont1">
             <div class="duyuruIconCont">
-            <img class="duyuru-image" src="${url}" alt="Duyuru Görseli">
+            <img class="duyuru-image" src="images/${url}.webp" alt="Duyuru Görseli">
             </div>
             <div class="duyuruTextCont">
               <h1 class="duyuruBaslik">${title}</h1>
