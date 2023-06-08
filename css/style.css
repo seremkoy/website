@@ -1521,9 +1521,6 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     justify-content: center;
   }
-  .video-area iframe{
-    width: 90%;
-  }
   .text-area {
     height: 99%;
     width: 90%;
@@ -1568,7 +1565,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
   }
   .duyuruTextCont {
-    max-width: 70%;
+    width: 95%;
     padding-left: 0;
   }
   .duyuruCont1 {
@@ -1577,6 +1574,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 1rem;
   }
   .mobile-toggle {
     display: block;
