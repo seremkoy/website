@@ -60,7 +60,7 @@ async function weatherApi() {
 
       let weatherTemplate = `
           <div class="temp">
-            <img src="https://openweathermap.org/img/wn/${weatherIcon}@2x.png">   
+            <img src="https://openweathermap.org/img/wn/${weatherIcon}@2x.png" alt="Hava Durumu Görseli">   
             <span class="temp">${weatherTemp}°</span>
           </div>
           <div>
