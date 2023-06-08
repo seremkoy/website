@@ -35,6 +35,27 @@ async function fetchDuyuruRSS (){
     } catch (error) {
         console.log(error)
     }
+    var duyuruConts = document.querySelectorAll(".duyuruCont1");
+    var closePop = document.getElementById('close-pop-img')
+    duyuruConts.forEach(function(duyuruCont) {
+    var duyuruIconCont = duyuruCont.querySelector(".duyuruIconCont");
+    duyuruIconCont.addEventListener("click", function() {
+        var src = this.querySelector("img").getAttribute("src");
+        var popupImg = document.getElementById("popup-img");
+        popupImg.setAttribute("src", src);
+        var popup = document.getElementById("popup");
+        popup.style.display = "flex";
+        closePop.addEventListener('click',kapa)
+
+        function kapa(){
+            popup.style.display = 'none'
+        }
+        popup.addEventListener('click',function(){
+            popup.style.display = 'none'
+        })
+    });
+    });
+   
 }
 
 fetchDuyuruRSS()
