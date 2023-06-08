@@ -60,5 +60,15 @@
         <url>muhammedmericsunnet</url>
         </enclosure>
         </item>
+        
+        <item>
+        <title>DÜĞÜN</title>
+        <type>DÜĞÜN</type>
+        <description>Elif ve Emre </description>
+        <date>21 Ekim 2023</date>
+        <enclosure>
+        <url>elifveemre</url>
+        </enclosure>
+        </item>
         </channel>
 </rss>
