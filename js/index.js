@@ -91,38 +91,39 @@ document.getElementById("copy").innerHTML = `Tüm hakları saklıdır. &copy; ${
 //Copyright için tarih -END-
 
 //POP UP SECTION
-const popUp = document.querySelector(".pop-up");
-const closeButton = document.querySelector("#close-pop");
-const progressBar = document.getElementById("progress-bar");
-function openPopUp() {
-  popUp.classList.add("show");
-  progressBar.style.width = "100%";
-  setTimeout(closePopUp, 20000); 
-  startProgressBar();
-}
 
-function closePopUp() {
-  popUp.classList.remove("show");
-}
-function startProgressBar() {
-  let width = 100;
-  const interval = setInterval(frame, 195); // Her 100 milisaniyede bir frame() fonksiyonunu çağır
+// const popUp = document.querySelector(".pop-up");
+// const closeButton = document.querySelector("#close-pop");
+// const progressBar = document.getElementById("progress-bar");
+// function openPopUp() {
+//   popUp.classList.add("show");
+//   progressBar.style.width = "100%";
+//   setTimeout(closePopUp, 20000); 
+//   startProgressBar();
+// }
 
-  function frame() {
-    if (width <= 0) {
-      clearInterval(interval); // İlerleme çubuğu tamamen azaldığında interval'i temizle
-    } else {
-      width--;
-      progressBar.style.width = width + "%"; // İlerleme çubuğunun genişliğini güncelle
-    }
-  }
-}
-closeButton.addEventListener("click", closePopUp);
+// function closePopUp() {
+//   popUp.classList.remove("show");
+// }
+// function startProgressBar() {
+//   let width = 100;
+//   const interval = setInterval(frame, 195); // Her 100 milisaniyede bir frame() fonksiyonunu çağır
 
-
-window.onload
+//   function frame() {
+//     if (width <= 0) {
+//       clearInterval(interval); // İlerleme çubuğu tamamen azaldığında interval'i temizle
+//     } else {
+//       width--;
+//       progressBar.style.width = width + "%"; // İlerleme çubuğunun genişliğini güncelle
+//     }
+//   }
+// }
+// closeButton.addEventListener("click", closePopUp);
 
 
-window.onload = openPopUp
+// window.onload
+
+
+// window.onload = openPopUp
 
 // POP UP SECTION END

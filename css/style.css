@@ -23,7 +23,7 @@
   font-family: 'Wix Madefor Display', sans-serif;
 }
 html {
-  background-image: url(../images/mesh-679.png);
+  background-image: url(../images/mesh-679.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -399,7 +399,7 @@ h3 {
   display: flex;
   width: 100%;
   height: 90vh;
-  /* background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(/images/background.png); */
+  /* background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(/images/background.webp); */
 }
 .home-area-l,
 .home-area-r {
@@ -465,7 +465,7 @@ h3 {
 }
 .container-d {
   color: var(--dark);
-  background-image: url("images/mesh-679.png");
+  background-image: url("images/mesh-679.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -473,7 +473,7 @@ h3 {
 .container-d-i {
   height: 100vh;
   color: var(--dark);
-  background-image: url("images/mesh-679.png");
+  background-image: url("images/mesh-679.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -919,13 +919,13 @@ h3 {
   background-repeat: no-repeat;
 }
 .duyuruIconCont1 {
-  background-image: url("images/muhtar4.png");
+  background-image: url("images/muhtar4.webp");
 }
 .duyuruIconCont2 {
-  background-image: url("images/yonetim8.png");
+  background-image: url("images/yonetim8.webp");
 }
 .duyuruIconCont3 {
-  background-image: url("images/developer5.png");
+  background-image: url("images/developer5.webp");
 }
 .duyuruTextCont {
   width: 70%;
@@ -1111,7 +1111,7 @@ hr {
 .page-title {
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
-    url(images/banner-bg.png);
+    url(images/banner-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
