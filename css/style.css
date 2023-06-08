@@ -1566,7 +1566,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
   }
   .duyuruTextCont {
-    max-width: 70%;
+    max-width: 90%;
     padding-left: 0;
   }
   .duyuruCont1 {
@@ -1574,6 +1574,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
     text-align: center;
   }
   .mobile-toggle {
