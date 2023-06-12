@@ -59,20 +59,3 @@ async function fetchDuyuruRSS (){
 }
 
 fetchDuyuruRSS()
-
-// var duyuruImages = document.getElementsByClassName("duyuru-image");
-// var popupImage = document.getElementById("duyuru-pop-img");
-// var popup = document.getElementById("duyuru-pop");
-// var closeBtn = document.getElementById("off");
-
-// Array.from(duyuruImages).forEach(function(image) {
-//   image.addEventListener("click", function() {
-//     var imageSource = this.src;
-//     popupImage.src = imageSource;
-//     // popup.style.display = "block";
-//   });
-// });
-
-// closeBtn.addEventListener("click", function() {
-//   popup.style.display = "none";
-// });
