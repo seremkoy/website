@@ -1,14 +1,13 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700&display=swap');
 
-@font-face {
-  font-family: "Rage Italic";
-  src: url("../fonts/RageItalicRegular.ttf") format("embedded-opentype"),
-    url("../fonts/RageItalicRegular.ttf") format("woff2"),
-    url("../fonts/RageItalicRegular.ttf") format("woff"),
-    url("../fonts/RageItalicRegular.ttf") format("truetype"),
-    url("../fonts/RageItalicRegular.ttf") format("svg");
-}
+  @font-face {
+    font-family: 'RageItalicRegular';
+    src: url('/fonts/RageItalicRegular.ttf') format('truetype');
+    font-display: swap;
+  }
+  
+
 * {
   margin: 0;
   padding: 0;
@@ -517,6 +516,7 @@ h3 {
   right: 20px;
   filter: drop-shadow(0rem 0.1rem 0.1rem rgba(0, 0, 30, 0.5));
   z-index: 1;
+  cursor: pointer;
 }
 #scrl:hover > i {
   animation: bounce 1.5s ease infinite;
