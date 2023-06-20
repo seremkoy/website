@@ -73,5 +73,15 @@
         <url>sigorta</url>
         </enclosure>
         </item>
+        
+        <item>
+        <title>DUYURU</title>
+        <type>VEFAT</type>
+        <description>Behlül Macit'in annesi Sevdiye Macit vedat etmiştir. Merhumeye Allah'tan rahmet kederli ailesine başsağlığı dileriz. Mekanı cennet olsun.</description>
+        <date>17 Haziran 2023</date>
+        <enclosure>
+        <url></url>
+        </enclosure>
+        </item>
         </channel>
 </rss>
