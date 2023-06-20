@@ -83,5 +83,15 @@
         <url></url>
         </enclosure>
         </item>
+        
+        <item>
+        <title>ÖZEL GÜN</title>
+        <type>ÖZEL GÜN</type>
+        <description>Tüm babalarımızın babalar günü kutlu olsun!</description>
+        <date>18 Haziran 2023</date>
+        <enclosure>
+        <url></url>
+        </enclosure>
+        </item>
         </channel>
 </rss>
