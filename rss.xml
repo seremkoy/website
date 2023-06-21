@@ -74,15 +74,7 @@
         </enclosure>
         </item>
         
-        <item>
-        <title>DUYURU</title>
-        <type>VEFAT</type>
-        <description>Behlül Macit'in annesi Sevdiye Macit vedat etmiştir. Merhumeye Allah'tan rahmet kederli ailesine başsağlığı dileriz. Mekanı cennet olsun.</description>
-        <date>17 Haziran 2023</date>
-        <enclosure>
-        <url>sevdiyemacitvefat</url>
-        </enclosure>
-        </item>
+        
         
         <item>
         <title>ÖZEL GÜN</title>
@@ -94,13 +86,14 @@
         </enclosure>
         </item>
         
+        
         <item>
-        <title>DUYURU</title>
-        <type>VEFAT</type>
-        <description>Fahrettin İşler'in ablası Emine işler vefat etmiştir. Merhumeye Allah'tan rahmet kederli ailesine ve yakınlarına başsağlığı dileriz. Mekanı cennet olsun.</description>
-        <date>20 Haziran 2023</date>
+        <title>DÜĞÜN</title>
+        <type>DÜĞÜN</type>
+        <description>Barış ve Hicran - Bu mutlu günümüzde sizleri aramızda görmekten mutluluk duyarız.</description>
+        <date>28 Haziran 2023 (Kurban Bayramı 1. Gün)</date>
         <enclosure>
-        <url>emineislervefat</url>
+        <url>baris</url>
         </enclosure>
         </item>
         </channel>
