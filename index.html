@@ -17,7 +17,7 @@
   <noscript>
     <link rel="stylesheet" href="css/style.css">
   </noscript>
-  
+
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -31,6 +31,17 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHE18M2R48"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JHE18M2R48');
+  </script>
 </head>
 
 <body>
@@ -63,7 +74,8 @@
         <div id="weather-cont" class="desk-weather">
         </div>
         <div class="mobile-menu">
-          <button id="mobile-toggle" style="background: transparent;" onclick="MobileNav()" aria-label="Mobil Navigasyonu Aç">
+          <button id="mobile-toggle" style="background: transparent;" onclick="MobileNav()"
+            aria-label="Mobil Navigasyonu Aç">
             <i class="fa-solid fa-ellipsis" id="mTog"></i>
           </button>
           <div class="menu-list" id="mobile-menu">
