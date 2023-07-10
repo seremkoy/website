@@ -14,7 +14,6 @@ const newsAddDiv = document.getElementById("contCardMain") //Haberlerin eklenece
 let count = 12
 let sliceStart = 0
 let sliceEnd = count
-
 async function mynetRSS() {
     try {
         newsAddDiv.innerHTML = "";
@@ -57,27 +56,75 @@ async function mynetRSS() {
         console.log(error)
     }
 }
-
-const nextNews = document.getElementById("next")
-nextNews.addEventListener("click", () => {
-    if (count < 50) {
-        count = count + 12
-        sliceStart = sliceStart + 12
-        sliceEnd = sliceEnd + 12
-        mynetRSS(count)
-        scroll()
-    }
+let countPage = document.querySelectorAll(".count");
+const nextN = document.querySelectorAll(".nxt");
+nextN.forEach(function(next){
+    next.addEventListener("click", () => {
+        if (count < 50) {
+            count = count + 12
+            sliceStart = sliceStart + 12
+            sliceEnd = sliceEnd + 12
+            mynetRSS(count)
+            scroll()
+        }
+        countPage.forEach(countP => {
+            let spanValue = parseInt(countP.innerHTML);
+            if (spanValue >= 0 && spanValue < 5) {
+                countP.innerHTML = spanValue + 1;
+              }
+        
+        });
+    })
 })
 
-const forwardNews = document.getElementById("forward")
-forwardNews.addEventListener("click", () => {
-    if (count !== 12) {
-        count = count - 12
-        sliceStart = sliceStart - 12
-        sliceEnd = sliceEnd - 12
-        mynetRSS(count)
-        scroll()
-    }
+const forwardNews = document.querySelectorAll(".fwd")
+forwardNews.forEach(function(forward){
+    forward.addEventListener("click", () => {
+        if (count !== 12) {
+            count = count - 12
+            sliceStart = sliceStart - 12
+            sliceEnd = sliceEnd - 12
+            mynetRSS(count)
+            scroll()
+        }
+        countPage.forEach(countP => {
+            let spanValue = parseInt(countP.innerHTML);
+           if(spanValue>= 0 && spanValue > 1){
+            countP.innerHTML = spanValue -1
+           }
+        });
+    })
 })
+// nextNews.addEventListener("click", () => {
+//     if (count < 50) {
+//         count = count + 12
+//         sliceStart = sliceStart + 12
+//         sliceEnd = sliceEnd + 12
+//         mynetRSS(count)
+//         scroll()
+//     }
+// })
+
+// const nextNews = document.getElementById("next")
+// nextNews.addEventListener("click", () => {
+//     if (count < 50) {
+//         count = count + 12
+//         sliceStart = sliceStart + 12
+//         sliceEnd = sliceEnd + 12
+//         mynetRSS(count)
+//         scroll()
+//     }
+// })
+
+// const forwardNews = document.getElementById("forward")
+// forwardNews.addEventListener("click", () => {
+//     if (count !== 12) {
+//         count = count - 12
+//         sliceStart = sliceStart - 12
+//         sliceEnd = sliceEnd - 12
+//         mynetRSS(count)
+//         scroll()
+//     }
+// })
 
 mynetRSS(count);

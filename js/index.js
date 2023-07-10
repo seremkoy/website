@@ -15,7 +15,6 @@ function MobileNav(){
   const Mtoggle = document.getElementById("mobile-menu");
   const mTog = document.getElementById("mTog");
   const togBtn = document.getElementById("mobile-toggle");
-  
   document.addEventListener('click', function(e) {
     if (!Mtoggle.contains(e.target) && e.target != mTog ) {
         Mtoggle.style.transform = "translateX(1000px)";

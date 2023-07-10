@@ -520,8 +520,15 @@ h3 {
   border-radius: 1rem;
   font-size: 1.4rem;
   color: #efe;
+  border: 1px solid var(--dark);
+  transition: all 250ms ease;
 }
-
+.home-area-l .home-page-buttons a:hover{
+  background-color: #efe;
+  transform: scale(1.05);
+  color: var(--dark);
+  box-shadow: 3px 3px 15px var(--dark);
+}
 .home-area-r img {
   width: 40vw;
 }
@@ -677,8 +684,12 @@ h3 {
   border-radius: 20px;
   flex: 1 1 40%;
   padding: 2rem;
+  transition: 222ms ease;
 }
-
+.contCard:hover{
+  transform: scale(1.05);
+  box-shadow: 1px 1px 10px var(--orange);
+}
 .contCard a {
   display: flex;
   flex-flow: column wrap;
