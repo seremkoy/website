@@ -1307,13 +1307,13 @@ hr {
 }
 
 body::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
   width: 10px;
   background-color: #bccba8;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .mobile-nav-cont {

@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <item>
-    <title>DÜĞÜN</title>
-    <type>DÜĞÜN</type>
-    <description>Zerda ve Barkın Evlilik Düğününe Hepiniz Davetlisiniz.</description>
-    <date>01 Temmuz 2023 Saat 20:00</date>
-    <enclosure>
-    <url>zerdavebarkin</url>
-    </enclosure>
-    </item>
 
     
     <item>
@@ -76,26 +67,6 @@
         
         
         
-        <item>
-        <title>ÖZEL GÜN</title>
-        <type>ÖZEL GÜN</type>
-        <description>Tüm babalarımızın babalar günü kutlu olsun!</description>
-        <date>18 Haziran 2023</date>
-        <enclosure>
-        <url>babalargunu2023</url>
-        </enclosure>
-        </item>
-        
-        
-        <item>
-        <title>DÜĞÜN</title>
-        <type>DÜĞÜN</type>
-        <description>Barış ve Hicran - Bu mutlu günümüzde sizleri aramızda görmekten mutluluk duyarız.</description>
-        <date>28 Haziran 2023 (Kurban Bayramı 1. Gün)</date>
-        <enclosure>
-        <url>baris</url>
-        </enclosure>
-        </item>
 
         <item>
         <title>MEVLİD</title>
@@ -104,6 +75,16 @@
         <date>05 Ağustos 2023</date>
         <enclosure>
         <url>mevlid</url>
+        </enclosure>
+        </item>
+
+        <item>
+        <title>DÜĞÜN</title>
+        <type>DÜĞÜN</type>
+        <description>Beyza-Cihan. Bu mutlu nişan günümüzde sizleri de aramızda görmekten mutluluk duyarız.</description>
+        <date>10 Eylül 2023</date>
+        <enclosure>
+        <url>dugun</url>
         </enclosure>
         </item>
         </channel>
