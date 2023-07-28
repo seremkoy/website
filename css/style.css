@@ -504,7 +504,59 @@ h3 {
   height: 90vh;
   /* background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(/images/background.webp); */
 }
-
+#home-about{
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background-color: #1fe04c;
+  align-items: center;
+  justify-content: center;
+}
+#home-about .header-about{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items:flex-start;
+}
+#home-about .header-about h1{
+  font-size: 3rem;
+  font-weight: 600;
+}
+#home-about .header-about p{
+  font-size: 1.5rem;
+  text-wrap:balance;
+  line-height: 1.2;
+}
+#home-about .header-about a{
+  font-size: 1.5rem;
+  color: #d7ebd7;
+  background-color: #0e1e05;
+  border-bottom: 5px solid #475947;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  transition: all 250ms ease;
+}
+#home-about .header-about a:hover{
+  background-color: #d7ebd7;
+  color: #0e1e05;
+  transform: translateX(-10px);
+  box-shadow: 10px 10px 0px #101110;
+}
+#home-about figure {
+  flex: 1;
+  width: 100px;
+}
+#home-about figure img{
+  object-fit: contain;
+  max-width: 100%;
+  border-radius: 15px 0 15px 0;
+  box-shadow: 10px 10px 0px #101110;
+  /* -3px -3px 13px #101110,-3px -3px 13px #101110; */
+}
 .home-area-l,
 .home-area-r {
   display: flex;
@@ -1950,54 +2002,3 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-#home-about{
-  position: relative;
-  width: 100%;
-  display: flex;
-  gap: 2rem;
-  padding: 1rem 2rem;
-  background-color: #1fe04c;
-}
-#home-about .header-about{
-  flex: 3;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items:flex-start;
-}
-#home-about .header-about h1{
-  font-size: 3rem;
-  font-weight: 600;
-}
-#home-about .header-about p{
-  font-size: 1.5rem;
-  text-wrap:balance;
-  line-height: 1.2;
-}
-#home-about .header-about a{
-  font-size: 1.5rem;
-  color: #d7ebd7;
-  background-color: #0e1e05;
-  border-bottom: 5px solid #475947;
-  padding: 1rem 2rem;
-  margin-top: 1rem;
-  font-weight: 700;
-  transition: all 250ms ease;
-}
-#home-about .header-about a:hover{
-  background-color: #d7ebd7;
-  color: #0e1e05;
-  transform: translateX(-10px);
-  box-shadow: 10px 10px 0px #101110;
-}
-#home-about figure {
-  flex: 1;
-  width: 100px;
-}
-#home-about figure img{
-  object-fit: contain;
-  max-width: 100%;
-  border-radius: 15px 0 15px 0;
-  box-shadow: 10px 10px 0px #101110;
-  /* -3px -3px 13px #101110,-3px -3px 13px #101110; */
-}
