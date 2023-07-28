@@ -1,3 +1,16 @@
+// LOADER START
+
+setTimeout(function loader(){
+  let loader = document.getElementById('loader');
+  // loader.classList.add('out');
+  loader.style.opacity = '0'
+  loader.style.visibility = 'hidden'
+},1200);
+
+
+
+
+// LOADER END
 //Scroll Back To Top -START-
 let toTop = document.getElementById('scrl') //to top butonunun seçilmesi
 toTop.addEventListener('click', function () { //Butona click eventi

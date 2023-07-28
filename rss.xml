@@ -97,5 +97,15 @@
         <url>dugun</url>
         </enclosure>
         </item>
+
+        <item>
+        <title>DÜĞÜN</title>
+        <type>DÜĞÜN</type>
+        <description>Miyase-Savaş. Bu mutlu günümüzde sizleri de aramızda görmekten mutluluk duyarız.</description>
+        <date>Kına: 18 Ağustos 2023 - Düğün: 19 Ağustos 2023</date>
+        <enclosure>
+        <url>savas</url>
+        </enclosure>
+        </item>
         </channel>
 </rss>
