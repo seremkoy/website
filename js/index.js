@@ -1,10 +1,8 @@
 // LOADER START
 
-setTimeout(function loader(){
+setTimeout( function loader(){
   let loader = document.getElementById('loader');
-  // loader.classList.add('out');
-  loader.style.opacity = '0'
-  loader.style.visibility = 'hidden'
+  loader.classList.add('out');
 },1200);
 
 

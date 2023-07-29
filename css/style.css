@@ -89,14 +89,10 @@ table {
   align-items: center;
   justify-content: center;
   z-index: 99;
-  opacity: 1;
-  visibility: inherit;
-  transition: 333ms ease;
 }
-/* #loader.out{
-  opacity: 0;
-  visibility: hidden;
-} */
+#loader.out{
+  display:none;
+}
 #loader img{
   max-width: 150px;
   animation: loader 1.2s linear forwards;
@@ -239,86 +235,7 @@ tr:hover {
   text-decoration: underline;
 }
 /* HAKKIMIZDA SECTION END */
-/* POP-UP Section */
-.pop-up {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  gap: 3rem;
-  top: -50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #1d1f1dbb;
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  color: var(--primary);
-  text-align: center;
-  width: 75%;
-  height: 72vh;
-  opacity: 0;
-  padding: 3rem 1rem;
-  transform: scale(0);
-  transition: all 0.8s;
-  overflow: hidden;
-  z-index: 3;
-}
 
-.pop-up.show {
-  top: 50%;
-  left: 50%;
-  display: flex;
-  opacity: 1;
-  transform: translate(-50%, -50%);
-}
-
-.pop-up h1 {
-  font-size: 4rem;
-  font-family: 'Wix Madefor Display', sans-serif;
-  font-weight: 600;
-  color: #05e13c;
-  transition: all 0.8s;
-}
-
-#pop-header {
-  font-size: 3rem;
-  font-family: 'Wix Madefor Display', sans-serif;
-  transition: all 0.8s;
-}
-
-#pop-text {
-  font-size: 1.5rem;
-  line-height: 1.7rem;
-  transition: all 0.8s;
-}
-
-#close-pop {
-  position: absolute;
-  top: 5%;
-  width: 45px;
-  height: 35px;
-  background-color: red;
-  border-radius: 5px;
-  right: 5%;
-  cursor: pointer;
-}
-
-#close-pop i {
-  font-size: 2rem;
-}
-
-#progress-bar {
-  left: 0;
-  top: 0;
-  border-top-left-radius: 10px;
-  height: 10px;
-  position: absolute;
-  background-color: red;
-  transition: 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-/* Pop-Up Seciton End */
 .logo {
   flex: 20%;
   text-align: center;
@@ -494,15 +411,10 @@ h3 {
   width: 50px;
 }
 
-/* main {
-  position: relative;
-  top: 0;
-} */
 .home-area {
   display: flex;
   width: 100%;
   height: 90vh;
-  /* background: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(/images/background.webp); */
 }
 #home-about{
   position: relative;
@@ -510,7 +422,8 @@ h3 {
   display: flex;
   gap: 2rem;
   padding: 1rem 2rem;
-  background-color: #1fe04c;
+  background-color: #e4eee6;
+  box-shadow: -3px -3px 13px #010501;
   align-items: center;
   justify-content: center;
 }
@@ -543,8 +456,8 @@ h3 {
 #home-about .header-about a:hover{
   background-color: #d7ebd7;
   color: #0e1e05;
-  transform: translateX(-10px);
-  box-shadow: 10px 10px 0px #101110;
+  transform: translate(10px,-10px);
+  box-shadow: -10px 10px 0px #101110;
 }
 #home-about figure {
   flex: 1;
@@ -553,7 +466,7 @@ h3 {
 #home-about figure img{
   object-fit: contain;
   max-width: 100%;
-  border-radius: 15px 0 15px 0;
+  /* border-radius: 15px 0 15px 0; */
   box-shadow: 10px 10px 0px #101110;
   /* -3px -3px 13px #101110,-3px -3px 13px #101110; */
 }
@@ -1974,7 +1887,21 @@ body::-webkit-scrollbar-thumb {
   .contCard {
     flex: 50%;
   }
-
+  #d .home-cards{
+    padding: 2rem 1rem;
+  }
+  .home-cards .h-card{
+    width: 100%;
+  }
+  .home-cards .h-card:hover > .home-txt{
+    height: 60%;
+  }
+  .home-cards .h-card .home-txt{
+    height: 25%;
+  }
+  .home-cards .h-card .home-txt .show h3{
+    font-size: 1.5rem;
+  }
   .bottom-text ul {
     flex-wrap: wrap;
     row-gap: 1rem;
@@ -2001,4 +1928,112 @@ body::-webkit-scrollbar-thumb {
     gap: 5px;
   }
 }
+.home-cards{
+  background-color: var(--dark);
+  width: 100%;
+  gap: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 4rem;
+}
+ .h-card{
+  position: relative;
+  width: 40%;
+  height: 50vh;
+  padding-top: 1.5rem;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+}
+.h-card:nth-child(1){
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)), url(../images/duyuru.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.h-card:nth-child(2){
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)), url(../images/haberler.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.h-card:nth-child(3){
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)), url(../images/piyasa.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.h-card:nth-child(4){
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)), url(../images/hakkimizda.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.h-card  h3{
+  font-size: 2rem;
+  color: #efe;
+  font-weight: 500;
+}
+.h-card .home-txt{
+  width: 100%;
+  height: 30%;
+  background-color: var(--primary);
+  border-radius: 40px 0 0 0;
+  padding: 1rem 2rem;
+  position: relative;
+  transition: 250ms ease;
+}
+.h-card .home-txt::before{
+  content: '';
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: -2.9rem;
+  right: 0px;
+  background: radial-gradient(circle at top left, transparent 70%, var(--primary) 72%);
+}
+.h-card .home-txt:hover{
+  height: 70%;
+}
+.show, .hide{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 2rem 0;
+  text-wrap:balance;
+}
+.show img{
+  filter: drop-shadow(3px  3px #2525);
+}
+.show h3{
+  color: #252525;
+}
+.hide p{
+  font-size: 1.2rem;
+
+}
+.hide a i{
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: var(--dark);
+  color: var(--green);
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 0.5rem;
+  transition: all 333ms;
+  border: 2px solid transparent;
+}
+.hide a i:hover{
+  border: 2px solid var(--dark);
+  background-color: transparent;
+  color: var(--dark);
+  transform: translate(10px,-10px);
+  box-shadow: -8px 8px  2px #0e1e05;
+}
+
 
