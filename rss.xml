@@ -6,6 +6,7 @@
     <item>
     <title>19 MAYIS</title>
     <type>RESMİ BAYRAM</type>
+    <person>19 MAYIS</person>
     <description>19 Mayıs Atatürk'ü Anma, Gençlik ve Spor Bayramımız Kutlu Olsun.</description>
     <date>19 Mayıs 2023</date>
     <enclosure>
@@ -18,37 +19,21 @@
      <item>
         <title>NİŞAN</title>
         <type>DÜĞÜN</type>
-        <description>Simge ve Savaş Kardeşlerimizin Nişan Törenine Tüm Dostlarımız Davetlidir.</description>
+        <person>Simge - Savaş</person>
+        <description>Nişan Törenimizde Siz Değerli Dostlarımızı Aramızda Görmekten Mutluluk Duyarız.</description>
         <date>19 Ağustos 2023</date>
         <enclosure>
         <url>simge-savas</url>
         </enclosure>
         </item>
 
-        <item>
-        <title>SÜNNET</title>
-        <type>SÜNNET</type>
-        <description>Kerem ve Erdem - Sünnet düğünümüze siz değerli dost ve akrabalarımızı aramızda görmekten mutluluk duyarız...</description>
-        <date>18 Haziran 2023</date>
-        <enclosure>
-        <url>keremveerdemsunnet</url>
-        </enclosure>
-        </item>
         
-        <item>
-        <title>SÜNNET MEVLİDİ</title>
-        <type>SÜNNET</type>
-        <description>Cabir Bilgen'in torunu Ayşe Bilgen'in oğlu Muhammed Meriç'in sünnet mevlidine tüm halkımız davetlidir.</description>
-        <date>9 Temmuz 2023 14:00</date>
-        <enclosure>
-        <url>muhammedmericsunnet</url>
-        </enclosure>
-        </item>
         
         <item>
         <title>DÜĞÜN</title>
         <type>DÜĞÜN</type>
-        <description>Elif ve Emre - En güzel günümüzde sizleri aramızda görmekten mutluluk duyarız.</description>
+        <person>Elif - Emre</person>
+        <description> En güzel günümüzde sizleri aramızda görmekten mutluluk duyarız.</description>
         <date>21 Ekim 2023</date>
         <enclosure>
         <url>elifveemre</url>
@@ -58,6 +43,7 @@
              <item>
         <title>DUYURU</title>
         <type>DUYURU</type>
+        <person></person>
         <description>TARSİM Ürün Sigortası Yaptırmak İsteyenler İçin Son Tarihler.</description>
         <date>Ayçiçek: 10 Haziran 2023 - Çeltik: 30 Haziran  2023</date>
         <enclosure>
@@ -71,6 +57,7 @@
         <item>
         <title>MEVLİD</title>
         <type>MEVLİD</type>
+        <person>Erdem EREL Mevlid</person>
         <description>Remziye EREL'in Merhum Oğlu Erdem EREL adına okutulacak yemekli mevlide tüm köy halkımız davetlidir.</description>
         <date>05 Ağustos 2023</date>
         <enclosure>
@@ -81,7 +68,8 @@
         <item>
         <title>DÜĞÜN</title>
         <type>DÜĞÜN</type>
-        <description>Dilara ve Durmuş - Bu Özel Günümüzü Sizlerle Paylaşmaktan Sevinç Duyarız.</description>
+        <person>Dilara - Durmuş</person>
+        <description> Bu Özel Günümüzü Sizlerle Paylaşmaktan Sevinç Duyarız.</description>
         <date>23 Temmuz 2023</date>
         <enclosure>
         <url>dilara-dugun</url>
@@ -91,7 +79,8 @@
         <item>
         <title>DÜĞÜN</title>
         <type>DÜĞÜN</type>
-        <description>Beyza-Cihan. Bu mutlu nişan günümüzde sizleri de aramızda görmekten mutluluk duyarız.</description>
+        <person>Beyza - Cihan</person>
+        <description> Bu mutlu nişan günümüzde sizleri de aramızda görmekten mutluluk duyarız.</description>
         <date>10 Eylül 2023</date>
         <enclosure>
         <url>dugun</url>
@@ -101,10 +90,22 @@
         <item>
         <title>DÜĞÜN</title>
         <type>DÜĞÜN</type>
-        <description>Miyase-Savaş. Bu mutlu günümüzde sizleri de aramızda görmekten mutluluk duyarız.</description>
+        <person>Miyase - Savaş</person>
+        <description> Bu mutlu günümüzde sizleri de aramızda görmekten mutluluk duyarız.</description>
         <date>Kına: 18 Ağustos 2023 - Düğün: 19 Ağustos 2023</date>
         <enclosure>
         <url>savas</url>
+        </enclosure>
+        </item>
+        
+        <item>
+        <title>DÜĞÜN</title>
+        <type>DÜĞÜN</type>
+        <person>Buket - Erkut</person>
+        <description> Bu mutlu günümüzde sizleri de aramızda görmekten onur duyarız.</description>
+        <date>20 Ağustos 2023</date>
+        <enclosure>
+        <url>buket</url>
         </enclosure>
         </item>
         </channel>

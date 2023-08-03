@@ -7,7 +7,6 @@ setTimeout( function loader(){
 
 
 
-
 // LOADER END
 //Scroll Back To Top -START-
 let toTop = document.getElementById('scrl') //to top butonunun seçilmesi

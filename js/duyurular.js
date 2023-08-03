@@ -13,6 +13,7 @@ async function fetchDuyuruRSS (){
             const title = item.querySelector("title").textContent
             const iconType = item.querySelector("type").textContent;
             const desc = item.querySelector("description").textContent
+            const person = item.querySelector("person").textContent
             const date = item.querySelector("date").textContent
             const url = item.querySelector("url").textContent
 
@@ -22,8 +23,12 @@ async function fetchDuyuruRSS (){
             <img class="duyuru-image" src="images/${url}.webp" alt="Duyuru Görseli">
             </div>
             <div class="duyuruTextCont">
-              <h1 class="duyuruBaslik">${title}</h1>
-              <p class="duyuruText">${desc}</p>
+            <h1 class="duyuruBaslik">${title}</h1>
+              <div class="duyuru-info">
+                <h4 class = "person">${person}</h4>
+                <p class="duyuruText">${desc}</p>
+              </div>
+              
               <p>${date}</p>
             </div>
             </div>
