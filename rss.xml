@@ -108,5 +108,38 @@
         <url>buket</url>
         </enclosure>
         </item>
+
+        <item>
+        <title>DÜĞÜN</title>
+        <type>DÜĞÜN</type>
+        <person>Ayaz Gültekin</person>
+        <description> Gülçin-Ali Gültekin'in oğulları Ayaz Gültekin'in Sünnet Düğününe Tüm Halkımız Davetlidir.</description>
+        <date>18 Ağustos 2023</date>
+        <enclosure>
+        <url>ayaz</url>
+        </enclosure>
+        </item>
+        
+        <item>
+        <title>MEVLİD</title>
+        <type>MEVLİD</type>
+        <person>EZGİ AKTÜRK BAYRAM</person>
+        <description> Ahmet ve Zülfiye AKTÜRK'ün Kızı Merhume Ezgi AKTÜRK BAYRAM'ın 9 Eylül 2023 Akşam Ezanından Sonra Akçadam'daki Yemekli Mevlidine Tüm Seremköy Halkı Davetlidir.</description>
+        <date>9 Eylül 2023</date>
+        <enclosure>
+        <url>ezgi-mevlid</url>
+        </enclosure>
+        </item>
+        
+        <item>
+        <title>DÜĞÜN</title>
+        <type>DÜĞÜN</type>
+        <person>Eymen Ayaz</person>
+        <description> Nilgün-Hüseyin Özsoy'un oğulları Eymen Ayaz'ın Sünnet Düğününe Tüm Halkımız Davetlidir..</description>
+        <date>12 Kasım 2023</date>
+        <enclosure>
+        <url>eymen</url>
+        </enclosure>
+        </item>
         </channel>
 </rss>
