@@ -40,41 +40,9 @@
         </enclosure>
         </item>
 
-             <item>
-        <title>DUYURU</title>
-        <type>DUYURU</type>
-        <person></person>
-        <description>TARSİM Ürün Sigortası Yaptırmak İsteyenler İçin Son Tarihler.</description>
-        <date>Ayçiçek: 10 Haziran 2023 - Çeltik: 30 Haziran  2023</date>
-        <enclosure>
-        <url>sigorta</url>
-        </enclosure>
-        </item>
-        
-        
-        
+     
 
-        <item>
-        <title>MEVLİD</title>
-        <type>MEVLİD</type>
-        <person>Erdem EREL Mevlid</person>
-        <description>Remziye EREL'in Merhum Oğlu Erdem EREL adına okutulacak yemekli mevlide tüm köy halkımız davetlidir.</description>
-        <date>05 Ağustos 2023</date>
-        <enclosure>
-        <url>mevlid</url>
-        </enclosure>
-        </item>
-
-        <item>
-        <title>DÜĞÜN</title>
-        <type>DÜĞÜN</type>
-        <person>Dilara - Durmuş</person>
-        <description> Bu Özel Günümüzü Sizlerle Paylaşmaktan Sevinç Duyarız.</description>
-        <date>23 Temmuz 2023</date>
-        <enclosure>
-        <url>dilara-dugun</url>
-        </enclosure>
-        </item>
+       
 
         <item>
         <title>DÜĞÜN</title>
@@ -87,16 +55,7 @@
         </enclosure>
         </item>
 
-        <item>
-        <title>DÜĞÜN</title>
-        <type>DÜĞÜN</type>
-        <person>Miyase - Savaş</person>
-        <description> Bu mutlu günümüzde sizleri de aramızda görmekten mutluluk duyarız.</description>
-        <date>Kına: 18 Ağustos 2023 - Düğün: 19 Ağustos 2023</date>
-        <enclosure>
-        <url>savas</url>
-        </enclosure>
-        </item>
+       
         
         <item>
         <title>DÜĞÜN</title>
@@ -109,16 +68,6 @@
         </enclosure>
         </item>
 
-        <item>
-        <title>DÜĞÜN</title>
-        <type>DÜĞÜN</type>
-        <person>Ayaz Gültekin</person>
-        <description> Gülçin-Ali Gültekin'in oğulları Ayaz Gültekin'in Sünnet Düğününe Tüm Halkımız Davetlidir.</description>
-        <date>18 Ağustos 2023</date>
-        <enclosure>
-        <url>ayaz</url>
-        </enclosure>
-        </item>
         
         <item>
         <title>MEVLİD</title>
@@ -139,6 +88,17 @@
         <date>12 Kasım 2023</date>
         <enclosure>
         <url>eymen</url>
+        </enclosure>
+        </item>
+
+        <item>
+        <title>DÜĞÜN</title>
+        <type>DÜĞÜN</type>
+        <person>Dilara - Dinçer</person>
+        <description> Dilara - Dinçer Çiftinin Evlilik Düğününe Tüm Halkımız Davetlidir..</description>
+        <date>27 Ağustos 2023</date>
+        <enclosure>
+        <url>dilara-dinc</url>
         </enclosure>
         </item>
         </channel>
