@@ -101,9 +101,17 @@ table {
 @keyframes loader {
   0%{
     transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform:rotateY(0deg) ;
+    -webkit-transform: rotateY(0deg);
   }
   100%{
     transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform:rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
   }
 }
 header {
@@ -1986,10 +1994,16 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
   }
   .home-cards .h-card:hover > .home-txt{
-    height: auto;
+    height: 72%;
   }
   .home-cards .h-card:hover .hide{
     display: flex;
+  }
+  .h-card:nth-child(1) .show{
+    padding: 0 0 1rem 0;
+  }
+  .h-card:nth-child(4) .show{
+    padding: 0 0 1rem 0;
   }
   .home-cards .h-card .home-txt{
     height: 20%;
